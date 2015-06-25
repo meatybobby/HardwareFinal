@@ -1,0 +1,3 @@
+verilog work "generator.v"
+verilog work "display.v"
+verilog work "calculator.v"
