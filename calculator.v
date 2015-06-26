@@ -9,7 +9,7 @@ reg[11:0] exp1,exp2,exp3,exp4,exp5,exp6;
 reg[9:0] delay;
 reg[9:0] ans1,ans2,ans3,ans4,ans5,ans6;
 reg[6:0] score;
-reg[1:0] life;
+reg[2:0] life;
 wire delay_clk,LCD_ENABLE,LCD_RW,LCD_DI,LCD_CS1,LCD_CS2, LCD_RST;
 wire[1:0] line,in_line;
 wire[7:0] in_ans,LCD_DATA;
@@ -17,6 +17,7 @@ wire[11:0] tmp_exp;
 wire update;
 reg last_update;
 reg correct;
+reg[3:0] combo;
 generator g(tmp_exp,line,update,rst);
 clk_8 c(delay_clk,clk,rst);
 display d(clk,rst,LCD_ENABLE, LCD_RW, LCD_DI, LCD_CS1,LCD_CS2, LCD_RST, LCD_DATA,exp1,exp2,exp3,exp4,exp5,exp6,update,score,life);
@@ -31,56 +32,89 @@ always @(posedge delay_clk or negedge rst) begin
 		exp5 = 12'h000;
 		exp6 = 12'h000;
 		score <= 7'b0000000;
-		life <= 2'b11;
+		life <= 3'b011;
 		delay <= {2'b00,8'h00};
 		correct<=0;
+		combo<=4'h0;
 	end
 	else begin
-		if(in_ans==ans4&&(exp4||exp1)) begin
-			if(exp4!=12'h000) begin
-				score <= score+1;
-				exp4 = 12'h000;
-				ans4 <= ans1;
-				correct<=1;
+		if(correct==1) correct<=0;
+		else begin
+			if(in_ans==ans4&&(exp4||exp1)) begin
+				if(exp4!=12'h000) begin
+					score <= score+1;
+					if(combo!=4'hF) combo<=combo+1;
+					else begin
+						combo<=4'h0;
+						if(life<5) life<=life+1;
+					end
+					exp4 = 12'h000;
+					ans4 <= ans1;
+					correct<=1;
+				end
+				else if(exp1!=12'h000) begin
+					score <= score+1;
+					if(combo!=4'hF) combo<=combo+1;
+					else begin
+						combo<=4'h0;
+						if(life<5) life<=life+1;
+					end
+					exp1 = 12'h000;
+					correct<=1;
+				end
 			end
-			else if(exp1!=12'h000) begin
-				score <= score+1;
-				exp1 = 12'h000;
-				correct<=1;
+			if(in_ans==ans5&&(exp5||exp2)) begin
+				if(exp5!=12'h000) begin
+					score <= score+1;
+					if(combo!=4'hF) combo<=combo+1;
+					else begin
+						combo<=4'h0;
+						if(life<5) life<=life+1;
+					end
+					exp5 = 12'h000;
+					ans5 <= ans2;
+					correct<=1;
+				end
+				else if(exp2!=12'h000) begin
+					score <= score+1;
+					if(combo!=4'hF) combo<=combo+1;
+					else begin
+						combo<=4'h0;
+						if(life<5) life<=life+1;
+					end
+					exp2 = 12'h000;
+					correct<=1;
+				end
 			end
-			else correct<=0;
+			if(in_ans==ans6&&(exp6||exp3)) begin
+				if(exp6!=12'h000) begin
+					score <= score+1;
+					if(combo!=4'hF) combo<=combo+1;
+					else begin
+						combo<=4'h0;
+						if(life<5) life<=life+1;
+					end
+					exp6 = 12'h000;
+					ans6 <= ans3;
+					correct<=1;
+				end
+				else if(exp3!=12'h000) begin
+					score <= score+1;
+					if(combo!=4'hF) combo<=combo+1;
+					else begin
+						combo<=4'h0;
+						if(life<5) life<=life+1;
+					end
+					exp3 = 12'h000;
+					correct<=1;
+				end
+			end
 		end
-		else if(in_ans==ans5&&(exp5||exp2)) begin
-			if(exp5!=12'h000) begin
-				score <= score+1;
-				exp5 = 12'h000;
-				ans5 <= ans2;
-				correct<=1;
-			end
-			else if(exp2!=12'h000) begin
-				score <= score+1;
-				exp2 = 12'h000;
-				correct<=1;
-			end
-			else correct<=0;
-		end
-		else if(in_ans==ans6&&(exp6||exp3)) begin
-			if(exp6!=12'h000) begin
-				score <= score+1;
-				exp6 = 12'h000;
-				ans6 <= ans3;
-				correct<=1;
-			end
-			else if(exp3!=12'h000) begin
-				score <= score+1;
-				exp3 = 12'h000;
-				correct<=1;
-			end
-			else correct<=0;
-		end
-		else correct<=0;
 		if(update) begin
-			if(exp4||exp5||exp6) life <= life-1;
+			if(exp4||exp5||exp6) begin
+				life <= life-1;
+				combo<=0;
+			end
 			exp4 = exp1;
 			exp5 = exp2;
 			exp6 = exp3;

@@ -7,8 +7,8 @@ reg[3:0] op,num1_fin,num2_fin;
 wire[3:0] op_fin;
 always @(posedge clk or negedge rst) begin
 	if (!rst) begin
-		num1 <= 6'b110010;
-		num2 <= 6'b100110;
+		num1 <= 6'b110110;
+		num2 <= 6'b100111;
 		op <= 4'b0110;
 	end
 	else begin
