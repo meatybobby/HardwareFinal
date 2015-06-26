@@ -1,10 +1,11 @@
-module calculator(LCD_ENABLE, LCD_RW, LCD_DI, LCD_CS1,LCD_CS2, LCD_RST, LCD_DATA,COLUMN, ROW, ENABLE, SEGMENT,clk,rst);
+module calculator(LED,LCD_ENABLE, LCD_RW, LCD_DI, LCD_CS1,LCD_CS2, LCD_RST, LCD_DATA,COLUMN, ROW, ENABLE, SEGMENT,clk,rst);
 input clk,rst;
 input[3:0] COLUMN;
 output LCD_ENABLE,LCD_RW,LCD_DI,LCD_CS1,LCD_CS2,LCD_RST;
 output[3:0] ROW,ENABLE;
 output[7:0] SEGMENT;
 output [7:0]  LCD_DATA;
+output[15:0] LED;
 reg[11:0] exp1,exp2,exp3,exp4,exp5,exp6;
 reg[9:0] delay;
 reg[9:0] ans1,ans2,ans3,ans4,ans5,ans6;
@@ -18,11 +19,11 @@ wire update;
 reg last_update;
 reg correct;
 reg[3:0] combo;
-generator g(tmp_exp,line,update,rst);
+generator g(tmp_exp,line,score,update,rst);
 clk_8 c(delay_clk,clk,rst);
 display d(clk,rst,LCD_ENABLE, LCD_RW, LCD_DI, LCD_CS1,LCD_CS2, LCD_RST, LCD_DATA,exp1,exp2,exp3,exp4,exp5,exp6,update,score,life);
 keyboard k(clk, rst, COLUMN, ROW, ENABLE, SEGMENT,in_ans,score,correct);
-
+combo com(combo,LED);
 always @(posedge delay_clk or negedge rst) begin
 	if(!rst) begin
 		exp1 = 12'h000;

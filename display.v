@@ -5,7 +5,7 @@ module display(CLK, RESET,
   input  CLK;
   input  RESET;
   input[11:0]  exp1,exp2,exp3,exp4,exp5,exp6;
-  input[1:0] Life;
+  input[2:0] Life;
   input[6:0] score;
   output LCD_ENABLE; 
   output LCD_RW;
@@ -16,13 +16,16 @@ module display(CLK, RESET,
   output [7:0]  LCD_DATA;
   output update;
   wire[3:0]LV;
-  assign LV = score/10 +1 ;
+  assign LV = score/5 +1 ;
   reg    [7:0]  LCD_DATA;
   reg    [7:0]  UPPER_PATTERN;
   reg    [7:0]  LOWER_PATTERN;
   
   reg    [7:0]  UPPER_PATTERN_page0;
   reg    [7:0]  LOWER_PATTERN_page0;
+  
+  reg    [7:0]  UPPER_PATTERN_startpage;
+  reg    [7:0]  LOWER_PATTERN_startpage;
   
   reg    [1:0]  LCD_SEL;
   reg    [2:0]  STATE;
@@ -40,6 +43,7 @@ module display(CLK, RESET,
   wire   LCD_CS1;
   wire   LCD_CS2; 
   wire   LCD_ENABLE;
+  wire[1:0] lvbit;
   reg last_update;
   reg[8:0] locexp1 = 0;
   reg[8:0] locexp2 = 0;
@@ -55,7 +59,8 @@ module display(CLK, RESET,
   reg[8:0]loc;
   reg update;
   
-  reg[11:0]speed =0;
+  reg[15:0] speed;
+  reg startpage = 0;
 /*****************************
  * Set ROM's Display Pattern *
  *****************************/
@@ -219,9 +224,9 @@ always @(INDEX)
 		  endcase
 	 end
 	 
-	if( INDEX >= 9'h060 && INDEX < 9'h060 + 8*Life )
+	if( INDEX >= 9'h050 && INDEX < 9'h050 + 8*Life )
 	 begin
-		case ( (INDEX-9'h060)%8 )  
+		case ( (INDEX-9'h050)%8 )  
 		  9'h000  :  UPPER_PATTERN_page0 = 8'hC0; // 0
 		  9'h001  :  UPPER_PATTERN_page0 = 8'hE0;
 		  9'h002  :  UPPER_PATTERN_page0 = 8'hF0;
@@ -237,7 +242,7 @@ always @(INDEX)
 always @(INDEX)
  begin
 	case(INDEX)
-	 9'h000  :  LOWER_PATTERN_page0 = 8'h00; // L
+	9'h000  :  LOWER_PATTERN_page0 = 8'h00; // L
     9'h001  :  LOWER_PATTERN_page0 = 8'h0F;
     9'h002  :  LOWER_PATTERN_page0 = 8'h0F;
     9'h003  :  LOWER_PATTERN_page0 = 8'h0C;
@@ -341,9 +346,9 @@ always @(INDEX)
 		  default : LOWER_PATTERN_page0 = 8'h00; 
 		  endcase
 	 end
-	if( INDEX >= 9'h060 && INDEX < 9'h060 + 8*Life )
+	if( INDEX >= 9'h050 && INDEX < 9'h050 + 8*Life )
 	 begin
-		case ( (INDEX-9'h060)%8 )  
+		case ( (INDEX-9'h050)%8 )  
 		  9'h000  :  LOWER_PATTERN_page0 = 8'h01; // 0
 		  9'h001  :  LOWER_PATTERN_page0 = 8'h03;
 		  9'h002  :  LOWER_PATTERN_page0 = 8'h07;
@@ -643,6 +648,161 @@ always @(INDEX)
    end   
    
    
+  always@(INDEX)
+   begin
+	case ( INDEX - 32)
+	9'h000: UPPER_PATTERN_startpage = 8'h01;  //G
+	9'h001: UPPER_PATTERN_startpage = 8'h07; 
+	9'h002: UPPER_PATTERN_startpage = 8'h0c; 
+	9'h003: UPPER_PATTERN_startpage = 8'h0c; 
+	9'h004: UPPER_PATTERN_startpage = 8'h0d; 
+	9'h005: UPPER_PATTERN_startpage = 8'h07; 
+	9'h006: UPPER_PATTERN_startpage = 8'h03; 
+	9'h007: UPPER_PATTERN_startpage = 8'h00; 
+	
+	9'h008: UPPER_PATTERN_startpage = 8'h0f;  //A
+	9'h009: UPPER_PATTERN_startpage = 8'h0f; 
+	9'h00a: UPPER_PATTERN_startpage = 8'h01; 
+	9'h00b: UPPER_PATTERN_startpage = 8'h01; 
+	9'h00c: UPPER_PATTERN_startpage = 8'h01; 
+	9'h00d: UPPER_PATTERN_startpage = 8'h0f; 
+	9'h00e: UPPER_PATTERN_startpage = 8'h0f; 
+	9'h00f: UPPER_PATTERN_startpage = 8'h00; 
+	
+	9'h010: UPPER_PATTERN_startpage = 8'h0f;  //M
+	9'h011: UPPER_PATTERN_startpage = 8'h0f; 
+	9'h012: UPPER_PATTERN_startpage = 8'h00; 
+	9'h013: UPPER_PATTERN_startpage = 8'h01; 
+	9'h014: UPPER_PATTERN_startpage = 8'h01; 
+	9'h015: UPPER_PATTERN_startpage = 8'h00; 
+	9'h016: UPPER_PATTERN_startpage = 8'h0f; 
+	9'h017: UPPER_PATTERN_startpage = 8'h0f; 
+
+	9'h018: UPPER_PATTERN_startpage = 8'h00;  //E
+	9'h019: UPPER_PATTERN_startpage = 8'h0f; 
+	9'h01a: UPPER_PATTERN_startpage = 8'h0f; 
+	9'h01b: UPPER_PATTERN_startpage = 8'h0d; 
+	9'h01c: UPPER_PATTERN_startpage = 8'h0d; 
+	9'h01d: UPPER_PATTERN_startpage = 8'h0d; 
+	9'h01e: UPPER_PATTERN_startpage = 8'h0c; 
+	9'h01f: UPPER_PATTERN_startpage = 8'h00; 
+	
+	9'h020: UPPER_PATTERN_startpage = 8'h0f;  //O
+	9'h021: UPPER_PATTERN_startpage = 8'h0f; 
+	9'h022: UPPER_PATTERN_startpage = 8'h0c; 
+	9'h023: UPPER_PATTERN_startpage = 8'h0c; 
+	9'h024: UPPER_PATTERN_startpage = 8'h0c; 
+	9'h025: UPPER_PATTERN_startpage = 8'h0f; 
+	9'h026: UPPER_PATTERN_startpage = 8'h0f; 
+	9'h027: UPPER_PATTERN_startpage = 8'h00; 
+	
+	9'h028: UPPER_PATTERN_startpage = 8'h01;  //V
+	9'h029: UPPER_PATTERN_startpage = 8'h03; 
+	9'h02a: UPPER_PATTERN_startpage = 8'h06; 
+	9'h02b: UPPER_PATTERN_startpage = 8'h0c; 
+	9'h02c: UPPER_PATTERN_startpage = 8'h0c; 
+	9'h02d: UPPER_PATTERN_startpage = 8'h06; 
+	9'h02e: UPPER_PATTERN_startpage = 8'h03; 
+	9'h02f: UPPER_PATTERN_startpage = 8'h01; 
+	
+	9'h030: UPPER_PATTERN_startpage = 8'h00;  //E
+	9'h031: UPPER_PATTERN_startpage = 8'h0f; 
+	9'h032: UPPER_PATTERN_startpage = 8'h0f; 
+	9'h033: UPPER_PATTERN_startpage = 8'h0d; 
+	9'h034: UPPER_PATTERN_startpage = 8'h0d; 
+	9'h035: UPPER_PATTERN_startpage = 8'h0d; 
+	9'h036: UPPER_PATTERN_startpage = 8'h0c; 
+	9'h037: UPPER_PATTERN_startpage = 8'h00; 
+	
+	9'h038: UPPER_PATTERN_startpage = 8'h0f;  //R
+	9'h039: UPPER_PATTERN_startpage = 8'h0f; 
+	9'h03a: UPPER_PATTERN_startpage = 8'h01; 
+	9'h03b: UPPER_PATTERN_startpage = 8'h03; 
+	9'h03c: UPPER_PATTERN_startpage = 8'h07; 
+	9'h03d: UPPER_PATTERN_startpage = 8'h0b; 
+	9'h03e: UPPER_PATTERN_startpage = 8'h08; 
+	9'h03f: UPPER_PATTERN_startpage = 8'h00; 
+	default : UPPER_PATTERN_startpage = 8'h00; 
+	endcase
+   end
+
+   always@(INDEX)
+   begin
+	case ( INDEX - 32)
+	9'h000: LOWER_PATTERN_startpage = 8'hc0;  //G
+	9'h001: LOWER_PATTERN_startpage = 8'he0; 
+	9'h002: LOWER_PATTERN_startpage = 8'h30; 
+	9'h003: LOWER_PATTERN_startpage = 8'h30; 
+	9'h004: LOWER_PATTERN_startpage = 8'h30; 
+	9'h005: LOWER_PATTERN_startpage = 8'h60; 
+	9'h006: LOWER_PATTERN_startpage = 8'h40; 
+	9'h007: LOWER_PATTERN_startpage = 8'h00; 
+	
+	9'h008: LOWER_PATTERN_startpage = 8'hc0;  //A
+	9'h009: LOWER_PATTERN_startpage = 8'hc0; 
+	9'h00a: LOWER_PATTERN_startpage = 8'h30; 
+	9'h00b: LOWER_PATTERN_startpage = 8'h30; 
+	9'h00c: LOWER_PATTERN_startpage = 8'h30; 
+	9'h00d: LOWER_PATTERN_startpage = 8'h30; 
+	9'h00e: LOWER_PATTERN_startpage = 8'hc0; 
+	9'h00f: LOWER_PATTERN_startpage = 8'hf0; 
+	
+	9'h010: LOWER_PATTERN_startpage = 8'hf0;  //M
+	9'h011: LOWER_PATTERN_startpage = 8'hf0; 
+	9'h012: LOWER_PATTERN_startpage = 8'h60; 
+	9'h013: LOWER_PATTERN_startpage = 8'h80; 
+	9'h014: LOWER_PATTERN_startpage = 8'h80; 
+	9'h015: LOWER_PATTERN_startpage = 8'h60; 
+	9'h016: LOWER_PATTERN_startpage = 8'hf0; 
+	9'h017: LOWER_PATTERN_startpage = 8'hf0; 
+
+	9'h018: LOWER_PATTERN_startpage = 8'h00;  //E
+	9'h019: LOWER_PATTERN_startpage = 8'hf0; 
+	9'h01a: LOWER_PATTERN_startpage = 8'hf0; 
+	9'h01b: LOWER_PATTERN_startpage = 8'hb0; 
+	9'h01c: LOWER_PATTERN_startpage = 8'hb0; 
+	9'h01d: LOWER_PATTERN_startpage = 8'hb0; 
+	9'h01e: LOWER_PATTERN_startpage = 8'h30; 
+	9'h01f: LOWER_PATTERN_startpage = 8'h00; 
+	
+	9'h020: LOWER_PATTERN_startpage = 8'hf0;  //O
+	9'h021: LOWER_PATTERN_startpage = 8'hf0; 
+	9'h022: LOWER_PATTERN_startpage = 8'h30; 
+	9'h023: LOWER_PATTERN_startpage = 8'h30; 
+	9'h024: LOWER_PATTERN_startpage = 8'h30; 
+	9'h025: LOWER_PATTERN_startpage = 8'hf0; 
+	9'h026: LOWER_PATTERN_startpage = 8'hf0; 
+	9'h027: LOWER_PATTERN_startpage = 8'h00; 
+	
+	9'h028: LOWER_PATTERN_startpage = 8'hf0;  //V
+	9'h029: LOWER_PATTERN_startpage = 8'hf0; 
+	9'h02a: LOWER_PATTERN_startpage = 8'h00; 
+	9'h02b: LOWER_PATTERN_startpage = 8'h00; 
+	9'h02c: LOWER_PATTERN_startpage = 8'h00; 
+	9'h02d: LOWER_PATTERN_startpage = 8'h00; 
+	9'h02e: LOWER_PATTERN_startpage = 8'hf0; 
+	9'h02f: LOWER_PATTERN_startpage = 8'hf0; 
+	
+	9'h030: LOWER_PATTERN_startpage = 8'h00;  //E
+	9'h031: LOWER_PATTERN_startpage = 8'hf0; 
+	9'h032: LOWER_PATTERN_startpage = 8'hf0; 
+	9'h033: LOWER_PATTERN_startpage = 8'hb0; 
+	9'h034: LOWER_PATTERN_startpage = 8'hb0; 
+	9'h035: LOWER_PATTERN_startpage = 8'hb0; 
+	9'h036: LOWER_PATTERN_startpage = 8'h30; 
+	9'h037: LOWER_PATTERN_startpage = 8'h00; 
+
+	9'h038: LOWER_PATTERN_startpage = 8'hf0;  //R
+	9'h039: LOWER_PATTERN_startpage = 8'hb0; 
+	9'h03a: LOWER_PATTERN_startpage = 8'hb0; 
+	9'h03b: LOWER_PATTERN_startpage = 8'hb0; 
+	9'h03c: LOWER_PATTERN_startpage = 8'hb0; 
+	9'h03d: LOWER_PATTERN_startpage = 8'hb0; 
+	9'h03e: LOWER_PATTERN_startpage = 8'he0; 
+	9'h03f: LOWER_PATTERN_startpage = 8'h00; 
+	default : LOWER_PATTERN_startpage = 8'h00; 
+	endcase
+   end
 /***********************
  * Time Base Generator *
  ***********************/
@@ -677,16 +837,17 @@ always @(INDEX)
 		locexp4 = 9'h40;
 		locexp5 = 9'h40;
 		locexp6 = 9'h40;
-		locexp1 = 0;
-		locexp2 = 0;
-		locexp3 = 0;
+		locexp1 = 9'h30;
+		locexp2 = 9'h30;
+		locexp3 = 9'h30;
+		speed<=16'h0000;
 		update=0;
-     end 
+     end
     else
      begin
-		  speed = speed +1;
 		if(locexp1>=64||locexp2>=64||locexp3>=64) update=1;
 		else update=0;
+		speed<=speed+1;
 		if(update) begin
 			locexp4 = locexp1;
 			locexp5 = locexp2;
@@ -698,7 +859,7 @@ always @(INDEX)
 		 if (ENABLE < 2'b10)
          begin       
 	       ENABLE  <= ENABLE + 1;
-	       DELAY[1]<= 1'b1;
+	       DELAY[2]<= 1'b1;
          end  
          else if (DELAY != 16'h0000)    
             DELAY <= DELAY - 1;
@@ -752,6 +913,38 @@ always @(INDEX)
 			        CLEAR  <= 1'b0; 
                 end  
    	       end
+		   else if(Life == 0)
+		    begin
+               if (INDEX < 128)
+               begin
+                  LCD_DI <= 1'b1;
+                  if (X_PAGE == 3)
+					begin
+					LCD_DATA <= LOWER_PATTERN_startpage;
+                   end
+				  else if(X_PAGE == 4)
+					begin
+                    LCD_DATA <= UPPER_PATTERN_startpage;
+					end
+				  else
+				   begin
+					LCD_DATA <= 8'h00;
+				   end
+               if (INDEX < 64)
+                    LCD_SEL <= 2'b01;
+					else
+                    LCD_SEL <= 2'b10;
+                              
+               INDEX  = INDEX + 1;
+               ENABLE<= 2'b00;
+               end
+           else
+           begin
+               STATE  <= 3'o3;
+               LCD_SEL<= 2'b11;
+               X_PAGE <= X_PAGE+1; 
+           end 
+          end
 		   else if ((X_PAGE == 3'o0)||(X_PAGE == 3'o1))         
            begin
                if (INDEX < 128)
@@ -803,12 +996,12 @@ always @(INDEX)
                STATE  <= 3'o3;
                LCD_SEL<= 2'b11;
                X_PAGE <= X_PAGE+1;
-			   if( X_PAGE == 3'o3 && speed[9] == 1)
+			   if( X_PAGE == 3'o3 && speed[lvbit])
 				 begin
 					locexp1 = locexp1+1; 
-					locexp4 = locexp4+1; 
+					locexp4 = locexp4+1;
+				 end
 				end
-			  end 
           end
 		  else if ((X_PAGE == 3'o4)||(X_PAGE == 3'o5))         
            begin
@@ -833,10 +1026,10 @@ always @(INDEX)
                STATE  <= 3'o3;
                LCD_SEL<= 2'b11;
                X_PAGE <= X_PAGE + 1;
-			   if( X_PAGE == 3'o5 && speed[9] == 1)
+			   if( X_PAGE == 3'o5 && speed[lvbit])
 				begin
 					locexp2 = locexp2+1; 
-					locexp5 = locexp5+1; 
+					locexp5 = locexp5+1;
 				end
            end 
           end
@@ -863,10 +1056,11 @@ always @(INDEX)
                STATE  <= 3'o3;
                LCD_SEL<= 2'b11;
                X_PAGE <= X_PAGE + 1;
-			   if( X_PAGE == 3'o7 && speed[9] == 1)
+			   if( X_PAGE == 3'o7 && speed[lvbit] )
 				begin
 					locexp3 = locexp3+1; 
-					locexp6 = locexp6+1; 
+					locexp6 = locexp6+1;
+					speed<=16'h0000;
 				end
            end 
           end
@@ -874,7 +1068,7 @@ always @(INDEX)
           begin
              STATE  <= 3'o3;
              X_PAGE <= 3'o2;
-				DELAY[16]<= 1'b1;
+			DELAY[16]<= 1'b1;
           end  
          end  
 	   end
@@ -882,4 +1076,5 @@ always @(INDEX)
   assign LCD_ENABLE = ENABLE[0];
   assign LCD_CS1    = LCD_SEL[0];
   assign LCD_CS2    = LCD_SEL[1];
+  assign lvbit = (LV>3?0:(LV>2?1:2));
 endmodule 

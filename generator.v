@@ -1,7 +1,8 @@
-module generator(exp,line,clk,rst);
+module generator(exp,line,score,clk,rst);
 output[11:0] exp;
 output[1:0] line;
 input clk,rst;
+input[6:0] score;
 reg[5:0] num1,num2;
 reg[3:0] op,num1_fin,num2_fin;
 wire[3:0] op_fin;
@@ -31,7 +32,7 @@ always @(num1 or num2 or op_fin) begin
 	end
 end
 
-assign op_fin = op[1:0]+4'hA;
+assign op_fin = (score>9?op[1:0]+4'hA:op[0]+4'hA);
 assign line = op%3;
 assign exp = {num1_fin,op_fin,num2_fin};
 endmodule
