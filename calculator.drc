@@ -1,14 +1,13 @@
 Release 14.7 Drc P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Fri Jun 26 13:18:22 2015
+Fri Jun 26 15:18:28 2015
 
 drc -z calculator.ncd calculator.pcf
 
-WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   d/Mmux_LCD_DATA[7]_GND_7_o_mux_756_OUT27 is sourced by a combinatorial pin.
-   This is not good design practice. Use the CE pin to control the loading of
-   data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net d/_n2454 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net k/_n0147 is sourced by a
    combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
