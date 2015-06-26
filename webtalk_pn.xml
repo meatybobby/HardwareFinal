@@ -3,15 +3,16 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pn" timeStamp="Fri Jun 26 18:15:02 2015">
+<application name="pn" timeStamp="Sat Jun 27 01:39:19 2015">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="7383004EBA0545BF81C960F34B0B4452" type="project"/>
-<property name="ProjectIteration" value="84" type="project"/>
-<property name="ProjectFile" value="C:/Users/NTHUCS/final/HardwareFinal/final.xise" type="project"/>
+<property name="ProjectIteration" value="101" type="project"/>
+<property name="ProjectFile" value="C:/Users/Bobby/HardwareFinal/final.xise" type="project"/>
 <property name="ProjectCreationTimestamp" value="2015-06-25T14:39:27" type="project"/>
 </section>
 <section name="Project Statistics" visible="true">
 <property name="PROP_Enable_Message_Filtering" value="false" type="design"/>
+<property name="PROP_FitterReportFormat" value="HTML" type="process"/>
 <property name="PROP_LastAppliedGoal" value="Balanced" type="design"/>
 <property name="PROP_LastAppliedStrategy" value="Xilinx Default (unlocked)" type="design"/>
 <property name="PROP_ManualCompileOrderImp" value="false" type="design"/>
@@ -20,9 +21,10 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="PROP_SynthTopFile" value="changed" type="process"/>
 <property name="PROP_Top_Level_Module_Type" value="HDL" type="design"/>
 <property name="PROP_UseSmartGuide" value="false" type="design"/>
+<property name="PROP_UserConstraintEditorPreference" value="Text Editor" type="process"/>
 <property name="PROP_intProjectCreationTimestamp" value="2015-06-25T14:39:27" type="design"/>
 <property name="PROP_intWbtProjectID" value="7383004EBA0545BF81C960F34B0B4452" type="design"/>
-<property name="PROP_intWbtProjectIteration" value="84" type="process"/>
+<property name="PROP_intWbtProjectIteration" value="101" type="process"/>
 <property name="PROP_intWorkingDirLocWRTProjDir" value="Same" type="design"/>
 <property name="PROP_intWorkingDirUsed" value="No" type="design"/>
 <property name="PROP_xilxBitgStart_IntDone" value="true" type="process"/>

@@ -1,14 +1,14 @@
 Release 14.7 Drc P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Fri Jun 26 18:15:20 2015
+Sat Jun 27 01:39:45 2015
 
 drc -z calculator.ncd calculator.pcf
 
-WARNING:PhysDesignRules:372 - Gated clock. Clock net k/_n0147 is sourced by a
+WARNING:PhysDesignRules:372 - Gated clock. Clock net d/_n2504 is sourced by a
    combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net d/_n2542 is sourced by a
+WARNING:PhysDesignRules:372 - Gated clock. Clock net k/_n0147 is sourced by a
    combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
 DRC detected 0 errors and 2 warnings.  Please see the previously displayed

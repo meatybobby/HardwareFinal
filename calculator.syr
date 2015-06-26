@@ -105,19 +105,19 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Analyzing Verilog file "C:\Users\NTHUCS\final\HardwareFinal\DEBOUNCE_CLK.v" into library work
+Analyzing Verilog file "C:\Users\Bobby\HardwareFinal\DEBOUNCE_CLK.v" into library work
 Parsing module <DEBOUNCE_CLK>.
-Analyzing Verilog file "C:\Users\NTHUCS\final\HardwareFinal\clock_divider.v" into library work
+Analyzing Verilog file "C:\Users\Bobby\HardwareFinal\clock_divider.v" into library work
 Parsing module <clock_divider>.
-Analyzing Verilog file "C:\Users\NTHUCS\final\HardwareFinal\keyboard.v" into library work
+Analyzing Verilog file "C:\Users\Bobby\HardwareFinal\keyboard.v" into library work
 Parsing module <keyboard>.
-Analyzing Verilog file "C:\Users\NTHUCS\final\HardwareFinal\generator.v" into library work
+Analyzing Verilog file "C:\Users\Bobby\HardwareFinal\generator.v" into library work
 Parsing module <generator>.
-Analyzing Verilog file "C:\Users\NTHUCS\final\HardwareFinal\display.v" into library work
+Analyzing Verilog file "C:\Users\Bobby\HardwareFinal\display.v" into library work
 Parsing module <display>.
-Analyzing Verilog file "C:\Users\NTHUCS\final\HardwareFinal\combo.v" into library work
+Analyzing Verilog file "C:\Users\Bobby\HardwareFinal\combo.v" into library work
 Parsing module <combo>.
-Analyzing Verilog file "C:\Users\NTHUCS\final\HardwareFinal\calculator.v" into library work
+Analyzing Verilog file "C:\Users\Bobby\HardwareFinal\calculator.v" into library work
 Parsing module <calculator>.
 Parsing module <clk_8>.
 
@@ -128,128 +128,128 @@ Parsing module <clk_8>.
 Elaborating module <calculator>.
 
 Elaborating module <generator>.
-WARNING:HDLCompiler:413 - "C:\Users\NTHUCS\final\HardwareFinal\generator.v" Line 26: Result of 5-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\NTHUCS\final\HardwareFinal\generator.v" Line 27: Result of 5-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\NTHUCS\final\HardwareFinal\generator.v" Line 30: Result of 5-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\NTHUCS\final\HardwareFinal\generator.v" Line 31: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Bobby\HardwareFinal\generator.v" Line 26: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Bobby\HardwareFinal\generator.v" Line 27: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Bobby\HardwareFinal\generator.v" Line 30: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Bobby\HardwareFinal\generator.v" Line 31: Result of 5-bit expression is truncated to fit in 4-bit target.
 
 Elaborating module <clk_8>.
-WARNING:HDLCompiler:413 - "C:\Users\NTHUCS\final\HardwareFinal\calculator.v" Line 212: Result of 9-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Bobby\HardwareFinal\calculator.v" Line 212: Result of 9-bit expression is truncated to fit in 8-bit target.
 
 Elaborating module <display>.
-WARNING:HDLCompiler:413 - "C:\Users\NTHUCS\final\HardwareFinal\display.v" Line 19: Result of 8-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:91 - "C:\Users\NTHUCS\final\HardwareFinal\display.v" Line 73: Signal <exp1> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:\Users\NTHUCS\final\HardwareFinal\display.v" Line 74: Signal <exp1> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:\Users\NTHUCS\final\HardwareFinal\display.v" Line 75: Signal <exp2> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:\Users\NTHUCS\final\HardwareFinal\display.v" Line 76: Signal <exp2> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:\Users\NTHUCS\final\HardwareFinal\display.v" Line 77: Signal <exp3> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:\Users\NTHUCS\final\HardwareFinal\display.v" Line 78: Signal <exp3> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:\Users\NTHUCS\final\HardwareFinal\display.v" Line 86: Signal <exp4> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:\Users\NTHUCS\final\HardwareFinal\display.v" Line 87: Signal <exp4> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:\Users\NTHUCS\final\HardwareFinal\display.v" Line 88: Signal <exp5> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:\Users\NTHUCS\final\HardwareFinal\display.v" Line 89: Signal <exp5> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:\Users\NTHUCS\final\HardwareFinal\display.v" Line 90: Signal <exp6> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:\Users\NTHUCS\final\HardwareFinal\display.v" Line 91: Signal <exp6> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:\Users\NTHUCS\final\HardwareFinal\display.v" Line 99: Signal <locexp1> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:\Users\NTHUCS\final\HardwareFinal\display.v" Line 100: Signal <locexp2> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:\Users\NTHUCS\final\HardwareFinal\display.v" Line 101: Signal <locexp3> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:\Users\NTHUCS\final\HardwareFinal\display.v" Line 102: Signal <loc1> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:\Users\NTHUCS\final\HardwareFinal\display.v" Line 109: Signal <locexp4> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:\Users\NTHUCS\final\HardwareFinal\display.v" Line 110: Signal <locexp5> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:\Users\NTHUCS\final\HardwareFinal\display.v" Line 111: Signal <locexp6> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:\Users\NTHUCS\final\HardwareFinal\display.v" Line 112: Signal <loc2> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:\Users\NTHUCS\final\HardwareFinal\display.v" Line 139: Signal <LV> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:\Users\NTHUCS\final\HardwareFinal\display.v" Line 227: Signal <Life> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:\Users\NTHUCS\final\HardwareFinal\display.v" Line 265: Signal <LV> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:\Users\NTHUCS\final\HardwareFinal\display.v" Line 349: Signal <Life> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:\Users\NTHUCS\final\HardwareFinal\display.v" Line 365: Signal <loc1> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:\Users\NTHUCS\final\HardwareFinal\display.v" Line 367: Signal <number1> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:\Users\NTHUCS\final\HardwareFinal\display.v" Line 368: Signal <loc1> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:\Users\NTHUCS\final\HardwareFinal\display.v" Line 370: Signal <loc1> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:\Users\NTHUCS\final\HardwareFinal\display.v" Line 372: Signal <number1> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:\Users\NTHUCS\final\HardwareFinal\display.v" Line 373: Signal <loc1> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:\Users\NTHUCS\final\HardwareFinal\display.v" Line 375: Signal <loc1> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:\Users\NTHUCS\final\HardwareFinal\display.v" Line 377: Signal <number1> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:\Users\NTHUCS\final\HardwareFinal\display.v" Line 378: Signal <loc1> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:\Users\NTHUCS\final\HardwareFinal\display.v" Line 380: Signal <loc2> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:\Users\NTHUCS\final\HardwareFinal\display.v" Line 382: Signal <number2> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:\Users\NTHUCS\final\HardwareFinal\display.v" Line 383: Signal <loc2> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:\Users\NTHUCS\final\HardwareFinal\display.v" Line 385: Signal <loc2> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:\Users\NTHUCS\final\HardwareFinal\display.v" Line 387: Signal <number2> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:\Users\NTHUCS\final\HardwareFinal\display.v" Line 388: Signal <loc2> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:\Users\NTHUCS\final\HardwareFinal\display.v" Line 390: Signal <loc2> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:\Users\NTHUCS\final\HardwareFinal\display.v" Line 392: Signal <number2> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:\Users\NTHUCS\final\HardwareFinal\display.v" Line 393: Signal <loc2> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:\Users\NTHUCS\final\HardwareFinal\display.v" Line 528: Signal <loc> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:\Users\NTHUCS\final\HardwareFinal\display.v" Line 646: Signal <numberpattern> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:413 - "C:\Users\NTHUCS\final\HardwareFinal\display.v" Line 815: Result of 9-bit expression is truncated to fit in 8-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\NTHUCS\final\HardwareFinal\display.v" Line 850: Result of 17-bit expression is truncated to fit in 16-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\NTHUCS\final\HardwareFinal\display.v" Line 861: Result of 3-bit expression is truncated to fit in 2-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\NTHUCS\final\HardwareFinal\display.v" Line 865: Result of 32-bit expression is truncated to fit in 16-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\NTHUCS\final\HardwareFinal\display.v" Line 899: Result of 10-bit expression is truncated to fit in 9-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\NTHUCS\final\HardwareFinal\display.v" Line 907: Result of 4-bit expression is truncated to fit in 3-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\NTHUCS\final\HardwareFinal\display.v" Line 938: Result of 10-bit expression is truncated to fit in 9-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\NTHUCS\final\HardwareFinal\display.v" Line 945: Result of 4-bit expression is truncated to fit in 3-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\NTHUCS\final\HardwareFinal\display.v" Line 966: Result of 10-bit expression is truncated to fit in 9-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\NTHUCS\final\HardwareFinal\display.v" Line 973: Result of 4-bit expression is truncated to fit in 3-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\NTHUCS\final\HardwareFinal\display.v" Line 991: Result of 10-bit expression is truncated to fit in 9-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\NTHUCS\final\HardwareFinal\display.v" Line 998: Result of 4-bit expression is truncated to fit in 3-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\NTHUCS\final\HardwareFinal\display.v" Line 1001: Result of 10-bit expression is truncated to fit in 9-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\NTHUCS\final\HardwareFinal\display.v" Line 1002: Result of 10-bit expression is truncated to fit in 9-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\NTHUCS\final\HardwareFinal\display.v" Line 1021: Result of 10-bit expression is truncated to fit in 9-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\NTHUCS\final\HardwareFinal\display.v" Line 1028: Result of 4-bit expression is truncated to fit in 3-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\NTHUCS\final\HardwareFinal\display.v" Line 1031: Result of 10-bit expression is truncated to fit in 9-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\NTHUCS\final\HardwareFinal\display.v" Line 1032: Result of 10-bit expression is truncated to fit in 9-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\NTHUCS\final\HardwareFinal\display.v" Line 1051: Result of 10-bit expression is truncated to fit in 9-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\NTHUCS\final\HardwareFinal\display.v" Line 1058: Result of 4-bit expression is truncated to fit in 3-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\NTHUCS\final\HardwareFinal\display.v" Line 1061: Result of 10-bit expression is truncated to fit in 9-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\NTHUCS\final\HardwareFinal\display.v" Line 1062: Result of 10-bit expression is truncated to fit in 9-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\NTHUCS\final\HardwareFinal\display.v" Line 1079: Result of 32-bit expression is truncated to fit in 2-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Bobby\HardwareFinal\display.v" Line 19: Result of 8-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:91 - "C:\Users\Bobby\HardwareFinal\display.v" Line 73: Signal <exp1> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Bobby\HardwareFinal\display.v" Line 74: Signal <exp1> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Bobby\HardwareFinal\display.v" Line 75: Signal <exp2> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Bobby\HardwareFinal\display.v" Line 76: Signal <exp2> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Bobby\HardwareFinal\display.v" Line 77: Signal <exp3> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Bobby\HardwareFinal\display.v" Line 78: Signal <exp3> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Bobby\HardwareFinal\display.v" Line 86: Signal <exp4> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Bobby\HardwareFinal\display.v" Line 87: Signal <exp4> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Bobby\HardwareFinal\display.v" Line 88: Signal <exp5> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Bobby\HardwareFinal\display.v" Line 89: Signal <exp5> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Bobby\HardwareFinal\display.v" Line 90: Signal <exp6> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Bobby\HardwareFinal\display.v" Line 91: Signal <exp6> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Bobby\HardwareFinal\display.v" Line 99: Signal <locexp1> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Bobby\HardwareFinal\display.v" Line 100: Signal <locexp2> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Bobby\HardwareFinal\display.v" Line 101: Signal <locexp3> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Bobby\HardwareFinal\display.v" Line 102: Signal <loc1> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Bobby\HardwareFinal\display.v" Line 109: Signal <locexp4> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Bobby\HardwareFinal\display.v" Line 110: Signal <locexp5> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Bobby\HardwareFinal\display.v" Line 111: Signal <locexp6> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Bobby\HardwareFinal\display.v" Line 112: Signal <loc2> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Bobby\HardwareFinal\display.v" Line 139: Signal <LV> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Bobby\HardwareFinal\display.v" Line 227: Signal <Life> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Bobby\HardwareFinal\display.v" Line 265: Signal <LV> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Bobby\HardwareFinal\display.v" Line 349: Signal <Life> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Bobby\HardwareFinal\display.v" Line 365: Signal <loc1> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Bobby\HardwareFinal\display.v" Line 367: Signal <number1> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Bobby\HardwareFinal\display.v" Line 368: Signal <loc1> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Bobby\HardwareFinal\display.v" Line 370: Signal <loc1> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Bobby\HardwareFinal\display.v" Line 372: Signal <number1> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Bobby\HardwareFinal\display.v" Line 373: Signal <loc1> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Bobby\HardwareFinal\display.v" Line 375: Signal <loc1> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Bobby\HardwareFinal\display.v" Line 377: Signal <number1> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Bobby\HardwareFinal\display.v" Line 378: Signal <loc1> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Bobby\HardwareFinal\display.v" Line 380: Signal <loc2> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Bobby\HardwareFinal\display.v" Line 382: Signal <number2> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Bobby\HardwareFinal\display.v" Line 383: Signal <loc2> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Bobby\HardwareFinal\display.v" Line 385: Signal <loc2> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Bobby\HardwareFinal\display.v" Line 387: Signal <number2> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Bobby\HardwareFinal\display.v" Line 388: Signal <loc2> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Bobby\HardwareFinal\display.v" Line 390: Signal <loc2> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Bobby\HardwareFinal\display.v" Line 392: Signal <number2> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Bobby\HardwareFinal\display.v" Line 393: Signal <loc2> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Bobby\HardwareFinal\display.v" Line 528: Signal <loc> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Bobby\HardwareFinal\display.v" Line 646: Signal <numberpattern> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:413 - "C:\Users\Bobby\HardwareFinal\display.v" Line 815: Result of 9-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Bobby\HardwareFinal\display.v" Line 850: Result of 17-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Bobby\HardwareFinal\display.v" Line 861: Result of 3-bit expression is truncated to fit in 2-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Bobby\HardwareFinal\display.v" Line 865: Result of 32-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Bobby\HardwareFinal\display.v" Line 899: Result of 10-bit expression is truncated to fit in 9-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Bobby\HardwareFinal\display.v" Line 907: Result of 4-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Bobby\HardwareFinal\display.v" Line 938: Result of 10-bit expression is truncated to fit in 9-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Bobby\HardwareFinal\display.v" Line 945: Result of 4-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Bobby\HardwareFinal\display.v" Line 966: Result of 10-bit expression is truncated to fit in 9-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Bobby\HardwareFinal\display.v" Line 973: Result of 4-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Bobby\HardwareFinal\display.v" Line 991: Result of 10-bit expression is truncated to fit in 9-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Bobby\HardwareFinal\display.v" Line 998: Result of 4-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Bobby\HardwareFinal\display.v" Line 1001: Result of 10-bit expression is truncated to fit in 9-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Bobby\HardwareFinal\display.v" Line 1002: Result of 10-bit expression is truncated to fit in 9-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Bobby\HardwareFinal\display.v" Line 1021: Result of 10-bit expression is truncated to fit in 9-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Bobby\HardwareFinal\display.v" Line 1028: Result of 4-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Bobby\HardwareFinal\display.v" Line 1031: Result of 10-bit expression is truncated to fit in 9-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Bobby\HardwareFinal\display.v" Line 1032: Result of 10-bit expression is truncated to fit in 9-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Bobby\HardwareFinal\display.v" Line 1051: Result of 10-bit expression is truncated to fit in 9-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Bobby\HardwareFinal\display.v" Line 1058: Result of 4-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Bobby\HardwareFinal\display.v" Line 1061: Result of 10-bit expression is truncated to fit in 9-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Bobby\HardwareFinal\display.v" Line 1062: Result of 10-bit expression is truncated to fit in 9-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Bobby\HardwareFinal\display.v" Line 1079: Result of 32-bit expression is truncated to fit in 4-bit target.
 
 Elaborating module <keyboard>.
-WARNING:HDLCompiler:413 - "C:\Users\NTHUCS\final\HardwareFinal\keyboard.v" Line 24: Result of 9-bit expression is truncated to fit in 7-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Bobby\HardwareFinal\keyboard.v" Line 24: Result of 9-bit expression is truncated to fit in 7-bit target.
 
 Elaborating module <clock_divider>.
 
 Elaborating module <DEBOUNCE_CLK>.
-WARNING:HDLCompiler:413 - "C:\Users\NTHUCS\final\HardwareFinal\DEBOUNCE_CLK.v" Line 35: Result of 5-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\NTHUCS\final\HardwareFinal\keyboard.v" Line 34: Result of 5-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:91 - "C:\Users\NTHUCS\final\HardwareFinal\keyboard.v" Line 124: Signal <answer> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:\Users\NTHUCS\final\HardwareFinal\keyboard.v" Line 125: Signal <answer> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:413 - "C:\Users\NTHUCS\final\HardwareFinal\keyboard.v" Line 125: Result of 7-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:91 - "C:\Users\NTHUCS\final\HardwareFinal\keyboard.v" Line 126: Signal <score> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:\Users\NTHUCS\final\HardwareFinal\keyboard.v" Line 127: Signal <score> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:413 - "C:\Users\NTHUCS\final\HardwareFinal\keyboard.v" Line 127: Result of 7-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:189 - "C:\Users\NTHUCS\final\HardwareFinal\calculator.v" Line 25: Size mismatch in connection of port <answer>. Formal port size is 7-bit while actual signal size is 8-bit.
+WARNING:HDLCompiler:413 - "C:\Users\Bobby\HardwareFinal\DEBOUNCE_CLK.v" Line 35: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Bobby\HardwareFinal\keyboard.v" Line 34: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:91 - "C:\Users\Bobby\HardwareFinal\keyboard.v" Line 124: Signal <answer> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Bobby\HardwareFinal\keyboard.v" Line 125: Signal <answer> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:413 - "C:\Users\Bobby\HardwareFinal\keyboard.v" Line 125: Result of 7-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:91 - "C:\Users\Bobby\HardwareFinal\keyboard.v" Line 126: Signal <score> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Bobby\HardwareFinal\keyboard.v" Line 127: Signal <score> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:413 - "C:\Users\Bobby\HardwareFinal\keyboard.v" Line 127: Result of 7-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:189 - "C:\Users\Bobby\HardwareFinal\calculator.v" Line 25: Size mismatch in connection of port <answer>. Formal port size is 7-bit while actual signal size is 8-bit.
 
 Elaborating module <combo>.
-WARNING:HDLCompiler:413 - "C:\Users\NTHUCS\final\HardwareFinal\calculator.v" Line 46: Result of 8-bit expression is truncated to fit in 7-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\NTHUCS\final\HardwareFinal\calculator.v" Line 47: Result of 5-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\NTHUCS\final\HardwareFinal\calculator.v" Line 50: Result of 4-bit expression is truncated to fit in 3-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\NTHUCS\final\HardwareFinal\calculator.v" Line 57: Result of 8-bit expression is truncated to fit in 7-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\NTHUCS\final\HardwareFinal\calculator.v" Line 58: Result of 5-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\NTHUCS\final\HardwareFinal\calculator.v" Line 61: Result of 4-bit expression is truncated to fit in 3-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\NTHUCS\final\HardwareFinal\calculator.v" Line 69: Result of 8-bit expression is truncated to fit in 7-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\NTHUCS\final\HardwareFinal\calculator.v" Line 70: Result of 5-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\NTHUCS\final\HardwareFinal\calculator.v" Line 73: Result of 4-bit expression is truncated to fit in 3-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\NTHUCS\final\HardwareFinal\calculator.v" Line 80: Result of 8-bit expression is truncated to fit in 7-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\NTHUCS\final\HardwareFinal\calculator.v" Line 81: Result of 5-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\NTHUCS\final\HardwareFinal\calculator.v" Line 84: Result of 4-bit expression is truncated to fit in 3-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\NTHUCS\final\HardwareFinal\calculator.v" Line 92: Result of 8-bit expression is truncated to fit in 7-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\NTHUCS\final\HardwareFinal\calculator.v" Line 93: Result of 5-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\NTHUCS\final\HardwareFinal\calculator.v" Line 96: Result of 4-bit expression is truncated to fit in 3-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\NTHUCS\final\HardwareFinal\calculator.v" Line 103: Result of 8-bit expression is truncated to fit in 7-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\NTHUCS\final\HardwareFinal\calculator.v" Line 104: Result of 5-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\NTHUCS\final\HardwareFinal\calculator.v" Line 107: Result of 4-bit expression is truncated to fit in 3-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\NTHUCS\final\HardwareFinal\calculator.v" Line 116: Result of 32-bit expression is truncated to fit in 3-bit target.
-WARNING:HDLCompiler:1127 - "C:\Users\NTHUCS\final\HardwareFinal\calculator.v" Line 27: Assignment to delay ignored, since the identifier is never used
+WARNING:HDLCompiler:413 - "C:\Users\Bobby\HardwareFinal\calculator.v" Line 46: Result of 8-bit expression is truncated to fit in 7-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Bobby\HardwareFinal\calculator.v" Line 47: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Bobby\HardwareFinal\calculator.v" Line 50: Result of 4-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Bobby\HardwareFinal\calculator.v" Line 57: Result of 8-bit expression is truncated to fit in 7-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Bobby\HardwareFinal\calculator.v" Line 58: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Bobby\HardwareFinal\calculator.v" Line 61: Result of 4-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Bobby\HardwareFinal\calculator.v" Line 69: Result of 8-bit expression is truncated to fit in 7-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Bobby\HardwareFinal\calculator.v" Line 70: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Bobby\HardwareFinal\calculator.v" Line 73: Result of 4-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Bobby\HardwareFinal\calculator.v" Line 80: Result of 8-bit expression is truncated to fit in 7-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Bobby\HardwareFinal\calculator.v" Line 81: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Bobby\HardwareFinal\calculator.v" Line 84: Result of 4-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Bobby\HardwareFinal\calculator.v" Line 92: Result of 8-bit expression is truncated to fit in 7-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Bobby\HardwareFinal\calculator.v" Line 93: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Bobby\HardwareFinal\calculator.v" Line 96: Result of 4-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Bobby\HardwareFinal\calculator.v" Line 103: Result of 8-bit expression is truncated to fit in 7-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Bobby\HardwareFinal\calculator.v" Line 104: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Bobby\HardwareFinal\calculator.v" Line 107: Result of 4-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Bobby\HardwareFinal\calculator.v" Line 116: Result of 32-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:1127 - "C:\Users\Bobby\HardwareFinal\calculator.v" Line 27: Assignment to delay ignored, since the identifier is never used
 
 =========================================================================
 *                           HDL Synthesis                               *
 =========================================================================
 
 Synthesizing Unit <calculator>.
-    Related source file is "C:\Users\NTHUCS\final\HardwareFinal\calculator.v".
+    Related source file is "C:\Users\Bobby\HardwareFinal\calculator.v".
     Found 12-bit register for signal <exp2>.
     Found 12-bit register for signal <exp3>.
     Found 12-bit register for signal <exp4>.
@@ -301,7 +301,7 @@ Synthesizing Unit <calculator>.
 Unit <calculator> synthesized.
 
 Synthesizing Unit <generator>.
-    Related source file is "C:\Users\NTHUCS\final\HardwareFinal\generator.v".
+    Related source file is "C:\Users\Bobby\HardwareFinal\generator.v".
     Found 6-bit register for signal <num2>.
     Found 4-bit register for signal <op>.
     Found 6-bit register for signal <num1>.
@@ -366,7 +366,7 @@ Synthesizing Unit <mod_4u_2u>.
 Unit <mod_4u_2u> synthesized.
 
 Synthesizing Unit <clk_8>.
-    Related source file is "C:\Users\NTHUCS\final\HardwareFinal\calculator.v".
+    Related source file is "C:\Users\Bobby\HardwareFinal\calculator.v".
     Found 8-bit register for signal <divider>.
     Found 8-bit adder for signal <divider[7]_GND_6_o_add_0_OUT> created at line 212.
     Summary:
@@ -375,7 +375,7 @@ Synthesizing Unit <clk_8>.
 Unit <clk_8> synthesized.
 
 Synthesizing Unit <display>.
-    Related source file is "C:\Users\NTHUCS\final\HardwareFinal\display.v".
+    Related source file is "C:\Users\Bobby\HardwareFinal\display.v".
     Found 1-bit register for signal <CLEAR>.
     Found 1-bit register for signal <DELAY<16>>.
     Found 1-bit register for signal <DELAY<15>>.
@@ -424,53 +424,55 @@ Synthesizing Unit <display>.
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
     Found 10-bit subtractor for signal <GND_7_o_GND_7_o_sub_539_OUT> created at line 653.
-    Found 7-bit adder for signal <n0736> created at line 19.
-    Found 8-bit adder for signal <n1024> created at line 265.
-    Found 8-bit adder for signal <n1337[1:8]> created at line 349.
+    Found 5-bit subtractor for signal <GND_7_o_GND_7_o_sub_989_OUT> created at line 1079.
+    Found 7-bit adder for signal <n0739> created at line 19.
+    Found 8-bit adder for signal <n1029> created at line 265.
+    Found 8-bit adder for signal <n1345[1:8]> created at line 349.
     Found 9-bit adder for signal <loc1[8]_GND_7_o_add_272_OUT> created at line 365.
     Found 9-bit adder for signal <loc1[8]_GND_7_o_add_275_OUT> created at line 370.
     Found 9-bit adder for signal <loc1[8]_GND_7_o_add_278_OUT> created at line 375.
     Found 9-bit adder for signal <loc2[8]_GND_7_o_add_281_OUT> created at line 380.
     Found 9-bit adder for signal <loc2[8]_GND_7_o_add_284_OUT> created at line 385.
     Found 9-bit adder for signal <loc2[8]_GND_7_o_add_287_OUT> created at line 390.
-    Found 8-bit adder for signal <n1126> created at line 528.
+    Found 8-bit adder for signal <n1131> created at line 528.
     Found 8-bit adder for signal <DIVIDER[8]_GND_7_o_add_672_OUT> created at line 815.
-    Found 16-bit adder for signal <speed[15]_GND_7_o_add_677_OUT> created at line 850.
-    Found 2-bit adder for signal <ENABLE[1]_GND_7_o_add_685_OUT> created at line 861.
-    Found 9-bit adder for signal <locexp1[8]_GND_7_o_add_745_OUT> created at line 1001.
-    Found 9-bit adder for signal <locexp4[8]_GND_7_o_add_746_OUT> created at line 1002.
-    Found 9-bit adder for signal <locexp2[8]_GND_7_o_add_768_OUT> created at line 1031.
-    Found 9-bit adder for signal <locexp5[8]_GND_7_o_add_769_OUT> created at line 1032.
-    Found 9-bit adder for signal <INDEX[8]_GND_7_o_add_787_OUT> created at line 1051.
-    Found 3-bit adder for signal <X_PAGE[2]_GND_7_o_add_788_OUT> created at line 1058.
-    Found 9-bit adder for signal <locexp3[8]_GND_7_o_add_791_OUT> created at line 1061.
-    Found 9-bit adder for signal <locexp6[8]_GND_7_o_add_792_OUT> created at line 1062.
+    Found 16-bit adder for signal <speed[15]_GND_7_o_add_679_OUT> created at line 850.
+    Found 2-bit adder for signal <ENABLE[1]_GND_7_o_add_688_OUT> created at line 861.
+    Found 9-bit adder for signal <locexp1[8]_GND_7_o_add_748_OUT> created at line 1001.
+    Found 9-bit adder for signal <locexp4[8]_GND_7_o_add_749_OUT> created at line 1002.
+    Found 9-bit adder for signal <locexp2[8]_GND_7_o_add_771_OUT> created at line 1031.
+    Found 9-bit adder for signal <locexp5[8]_GND_7_o_add_772_OUT> created at line 1032.
+    Found 9-bit adder for signal <INDEX[8]_GND_7_o_add_790_OUT> created at line 1051.
+    Found 3-bit adder for signal <X_PAGE[2]_GND_7_o_add_791_OUT> created at line 1058.
+    Found 9-bit adder for signal <locexp3[8]_GND_7_o_add_794_OUT> created at line 1061.
+    Found 9-bit adder for signal <locexp6[8]_GND_7_o_add_795_OUT> created at line 1062.
+    Found 32-bit adder for signal <GND_7_o_GND_7_o_add_989_OUT> created at line 1079.
     Found 3-bit subtractor for signal <GND_7_o_GND_7_o_sub_182_OUT<2:0>> created at line 265.
     Found 3-bit subtractor for signal <GND_7_o_GND_7_o_sub_421_OUT<2:0>> created at line 528.
-    Found 16-bit subtractor for signal <GND_7_o_GND_7_o_sub_688_OUT<15:0>> created at line 865.
-    Found 64x16-bit Read Only RAM for signal <_n3272>
-    Found 128x16-bit Read Only RAM for signal <_n3401>
-    Found 16x16-bit Read Only RAM for signal <_n3418>
-    Found 8x16-bit Read Only RAM for signal <_n3565>
-    Found 1-bit 4-to-1 multiplexer for signal <lvbit[1]_speed[3]_Mux_744_o> created at line 999.
-    Found 1-bit 3-to-1 multiplexer for signal <_n2514> created at line 98.
-    Found 1-bit 3-to-1 multiplexer for signal <_n2527> created at line 98.
-    Found 1-bit 3-to-1 multiplexer for signal <_n2540> created at line 108.
-    Found 1-bit 3-to-1 multiplexer for signal <_n2622> created at line 108.
-    Found 1-bit 3-to-1 multiplexer for signal <_n2635> created at line 98.
-    Found 1-bit 3-to-1 multiplexer for signal <_n2648> created at line 98.
-    Found 1-bit 3-to-1 multiplexer for signal <_n2661> created at line 98.
-    Found 1-bit 3-to-1 multiplexer for signal <_n2674> created at line 98.
-    Found 1-bit 3-to-1 multiplexer for signal <_n2687> created at line 98.
-    Found 1-bit 3-to-1 multiplexer for signal <_n2700> created at line 98.
-    Found 1-bit 3-to-1 multiplexer for signal <_n2713> created at line 98.
-    Found 1-bit 3-to-1 multiplexer for signal <_n2726> created at line 108.
-    Found 1-bit 3-to-1 multiplexer for signal <_n2739> created at line 108.
-    Found 1-bit 3-to-1 multiplexer for signal <_n2752> created at line 108.
-    Found 1-bit 3-to-1 multiplexer for signal <_n2765> created at line 108.
-    Found 1-bit 3-to-1 multiplexer for signal <_n2778> created at line 108.
-    Found 1-bit 3-to-1 multiplexer for signal <_n2791> created at line 108.
-    Found 1-bit 3-to-1 multiplexer for signal <_n2804> created at line 108.
+    Found 16-bit subtractor for signal <GND_7_o_GND_7_o_sub_691_OUT<15:0>> created at line 865.
+    Found 128x16-bit Read Only RAM for signal <_n3296>
+    Found 8x16-bit Read Only RAM for signal <_n3463>
+    Found 16x16-bit Read Only RAM for signal <_n3480>
+    Found 64x16-bit Read Only RAM for signal <_n3557>
+    Found 1-bit 16-to-1 multiplexer for signal <lvbit[3]_speed[15]_Mux_747_o> created at line 999.
+    Found 1-bit 3-to-1 multiplexer for signal <_n2463> created at line 98.
+    Found 1-bit 3-to-1 multiplexer for signal <_n2476> created at line 98.
+    Found 1-bit 3-to-1 multiplexer for signal <_n2489> created at line 98.
+    Found 1-bit 3-to-1 multiplexer for signal <_n2502> created at line 108.
+    Found 1-bit 3-to-1 multiplexer for signal <_n2516> created at line 108.
+    Found 1-bit 3-to-1 multiplexer for signal <_n2529> created at line 108.
+    Found 1-bit 3-to-1 multiplexer for signal <_n2542> created at line 108.
+    Found 1-bit 3-to-1 multiplexer for signal <_n2555> created at line 98.
+    Found 1-bit 3-to-1 multiplexer for signal <_n2568> created at line 108.
+    Found 1-bit 3-to-1 multiplexer for signal <_n2615> created at line 98.
+    Found 1-bit 3-to-1 multiplexer for signal <_n2662> created at line 108.
+    Found 1-bit 3-to-1 multiplexer for signal <_n2675> created at line 98.
+    Found 1-bit 3-to-1 multiplexer for signal <_n2688> created at line 98.
+    Found 1-bit 3-to-1 multiplexer for signal <_n2701> created at line 108.
+    Found 1-bit 3-to-1 multiplexer for signal <_n2714> created at line 108.
+    Found 1-bit 3-to-1 multiplexer for signal <_n2727> created at line 108.
+    Found 1-bit 3-to-1 multiplexer for signal <_n2740> created at line 98.
+    Found 1-bit 3-to-1 multiplexer for signal <_n2753> created at line 98.
 WARNING:Xst:737 - Found 1-bit latch for signal <loc1<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <loc1<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <loc1<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
@@ -504,18 +506,17 @@ WARNING:Xst:737 - Found 1-bit latch for signal <loc1<8>>. Latches may be generat
     Found 9-bit comparator lessequal for signal <n0389> created at line 848
     Found 9-bit comparator lessequal for signal <n0391> created at line 848
     Found 9-bit comparator lessequal for signal <n0394> created at line 848
-    Found 2-bit comparator greater for signal <ENABLE[1]_PWR_6_o_LessThan_685_o> created at line 859
-    Found 9-bit comparator greater for signal <INDEX[8]_GND_7_o_LessThan_694_o> created at line 897
-    Found 3-bit comparator greater for signal <X_PAGE[2]_PWR_6_o_LessThan_696_o> created at line 904
-    Found 9-bit comparator greater for signal <INDEX[8]_GND_7_o_LessThan_783_o> created at line 1038
-    Found 4-bit comparator greater for signal <GND_7_o_LV[3]_LessThan_985_o> created at line 1079
-    Found 4-bit comparator greater for signal <GND_7_o_LV[3]_LessThan_986_o> created at line 1079
+    Found 2-bit comparator greater for signal <ENABLE[1]_PWR_6_o_LessThan_688_o> created at line 859
+    Found 9-bit comparator greater for signal <INDEX[8]_GND_7_o_LessThan_697_o> created at line 897
+    Found 3-bit comparator greater for signal <X_PAGE[2]_PWR_6_o_LessThan_699_o> created at line 904
+    Found 9-bit comparator greater for signal <INDEX[8]_GND_7_o_LessThan_786_o> created at line 1038
+    Found 4-bit comparator greater for signal <GND_7_o_LV[3]_LessThan_988_o> created at line 1079
     Summary:
 	inferred   4 RAM(s).
-	inferred  25 Adder/Subtractor(s).
+	inferred  27 Adder/Subtractor(s).
 	inferred 122 D-type flip-flop(s).
 	inferred  18 Latch(s).
-	inferred  21 Comparator(s).
+	inferred  20 Comparator(s).
 	inferred 163 Multiplexer(s).
 	inferred   1 Finite State Machine(s).
 Unit <display> synthesized.
@@ -544,7 +545,7 @@ Synthesizing Unit <div_7u_3u>.
 Unit <div_7u_3u> synthesized.
 
 Synthesizing Unit <keyboard>.
-    Related source file is "C:\Users\NTHUCS\final\HardwareFinal\keyboard.v".
+    Related source file is "C:\Users\Bobby\HardwareFinal\keyboard.v".
     Found 4-bit register for signal <SCAN_CODE>.
     Found 4-bit register for signal <ENABLE>.
     Found 1-bit register for signal <KEY_BUFFER_7>.
@@ -560,7 +561,7 @@ Synthesizing Unit <keyboard>.
     Found 4x4-bit multiplier for signal <n0110> created at line 24.
     Found 4x4-bit Read Only RAM for signal <ROW>
     Found 16x8-bit Read Only RAM for signal <SEGMENT>
-    Found 16x4-bit Read Only RAM for signal <_n0215>
+    Found 16x4-bit Read Only RAM for signal <_n0214>
     Found 1-bit 4-to-1 multiplexer for signal <PRESS> created at line 45.
 WARNING:Xst:737 - Found 1-bit latch for signal <DECODE_BCD<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <DECODE_BCD<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
@@ -577,7 +578,7 @@ WARNING:Xst:737 - Found 1-bit latch for signal <DECODE_BCD<0>>. Latches may be g
 Unit <keyboard> synthesized.
 
 Synthesizing Unit <clock_divider>.
-    Related source file is "C:\Users\NTHUCS\final\HardwareFinal\clock_divider.v".
+    Related source file is "C:\Users\Bobby\HardwareFinal\clock_divider.v".
     Found 15-bit register for signal <num>.
     Found 15-bit adder for signal <next_num> created at line 32.
     Summary:
@@ -586,7 +587,7 @@ Synthesizing Unit <clock_divider>.
 Unit <clock_divider> synthesized.
 
 Synthesizing Unit <DEBOUNCE_CLK>.
-    Related source file is "C:\Users\NTHUCS\final\HardwareFinal\DEBOUNCE_CLK.v".
+    Related source file is "C:\Users\Bobby\HardwareFinal\DEBOUNCE_CLK.v".
     Found 4-bit register for signal <DEBOUNCE_COUNT>.
     Found 4-bit adder for signal <DEBOUNCE_COUNT[3]_GND_32_o_add_1_OUT> created at line 35.
     Found 4-bit comparator greater for signal <n0001> created at line 34
@@ -660,7 +661,7 @@ Synthesizing Unit <div_7u_4u>.
 Unit <div_7u_4u> synthesized.
 
 Synthesizing Unit <combo>.
-    Related source file is "C:\Users\NTHUCS\final\HardwareFinal\combo.v".
+    Related source file is "C:\Users\Bobby\HardwareFinal\combo.v".
     Found 16x16-bit Read Only RAM for signal <LED>
     Summary:
 	inferred   1 RAM(s).
@@ -701,7 +702,7 @@ Macro Statistics
  8x16-bit single-port Read Only RAM                    : 1
 # Multipliers                                          : 7
  4x4-bit multiplier                                    : 7
-# Adders/Subtractors                                   : 198
+# Adders/Subtractors                                   : 200
  10-bit adder                                          : 13
  10-bit subtractor                                     : 1
  11-bit adder                                          : 8
@@ -711,9 +712,10 @@ Macro Statistics
  2-bit adder                                           : 1
  3-bit adder                                           : 2
  3-bit subtractor                                      : 3
+ 32-bit adder                                          : 1
  4-bit adder                                           : 8
  5-bit adder                                           : 21
- 5-bit subtractor                                      : 6
+ 5-bit subtractor                                      : 7
  6-bit adder                                           : 25
  7-bit adder                                           : 50
  8-bit adder                                           : 31
@@ -733,14 +735,14 @@ Macro Statistics
  9-bit register                                        : 7
 # Latches                                              : 22
  1-bit latch                                           : 22
-# Comparators                                          : 118
+# Comparators                                          : 117
  10-bit comparator equal                               : 3
  10-bit comparator lessequal                           : 7
  11-bit comparator lessequal                           : 4
  2-bit comparator greater                              : 1
  3-bit comparator greater                              : 1
  3-bit comparator lessequal                            : 1
- 4-bit comparator greater                              : 4
+ 4-bit comparator greater                              : 3
  4-bit comparator lessequal                            : 9
  5-bit comparator greater                              : 1
  5-bit comparator lessequal                            : 7
@@ -751,14 +753,16 @@ Macro Statistics
  9-bit comparator greater                              : 13
  9-bit comparator lessequal                            : 11
 # Multiplexers                                         : 592
- 1-bit 2-to-1 multiplexer                              : 360
+ 1-bit 16-to-1 multiplexer                             : 1
+ 1-bit 2-to-1 multiplexer                              : 358
  1-bit 3-to-1 multiplexer                              : 18
- 1-bit 4-to-1 multiplexer                              : 2
+ 1-bit 4-to-1 multiplexer                              : 1
  10-bit 2-to-1 multiplexer                             : 18
  12-bit 2-to-1 multiplexer                             : 36
- 16-bit 2-to-1 multiplexer                             : 12
+ 16-bit 2-to-1 multiplexer                             : 13
  2-bit 2-to-1 multiplexer                              : 3
  3-bit 2-to-1 multiplexer                              : 9
+ 32-bit 2-to-1 multiplexer                             : 1
  4-bit 2-to-1 multiplexer                              : 24
  7-bit 2-to-1 multiplexer                              : 9
  8-bit 2-to-1 multiplexer                              : 28
@@ -809,7 +813,7 @@ Synthesizing (advanced) Unit <display>.
 The following registers are absorbed into counter <INDEX>: 1 register on signal <INDEX>.
 The following registers are absorbed into counter <ENABLE>: 1 register on signal <ENABLE>.
 The following registers are absorbed into counter <DIVIDER>: 1 register on signal <DIVIDER>.
-INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n3565> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n3463> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
     -----------------------------------------------------------------------
     | ram_type           | Distributed                         |          |
     -----------------------------------------------------------------------
@@ -820,7 +824,7 @@ INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n3565> will be implemented on LUTs 
     |     diA            | connected to signal <GND>           |          |
     |     doA            | connected to internal node          |          |
     -----------------------------------------------------------------------
-INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n3418> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n3480> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
     -----------------------------------------------------------------------
     | ram_type           | Distributed                         |          |
     -----------------------------------------------------------------------
@@ -831,7 +835,7 @@ INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n3418> will be implemented on LUTs 
     |     diA            | connected to signal <GND>           |          |
     |     doA            | connected to internal node          |          |
     -----------------------------------------------------------------------
-INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n3272> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n3557> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
     -----------------------------------------------------------------------
     | ram_type           | Distributed                         |          |
     -----------------------------------------------------------------------
@@ -842,14 +846,14 @@ INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n3272> will be implemented on LUTs 
     |     diA            | connected to signal <GND>           |          |
     |     doA            | connected to internal node          |          |
     -----------------------------------------------------------------------
-INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n3401> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n3296> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
     -----------------------------------------------------------------------
     | ram_type           | Distributed                         |          |
     -----------------------------------------------------------------------
     | Port A                                                              |
     |     aspect ratio   | 128-word x 16-bit                   |          |
     |     weA            | connected to signal <GND>           | high     |
-    |     addrA          | connected to signal <n1126<6:0>>    |          |
+    |     addrA          | connected to signal <n1131<6:0>>    |          |
     |     diA            | connected to signal <GND>           |          |
     |     doA            | connected to internal node          |          |
     -----------------------------------------------------------------------
@@ -869,7 +873,7 @@ INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_ROW> will be implemented on LUTs eit
     |     diA            | connected to signal <GND>           |          |
     |     doA            | connected to signal <ROW>           |          |
     -----------------------------------------------------------------------
-INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n0215> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n0214> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
     -----------------------------------------------------------------------
     | ram_type           | Distributed                         |          |
     -----------------------------------------------------------------------
@@ -909,17 +913,18 @@ Macro Statistics
  4x4-to-7-bit MAC                                      : 1
 # Multipliers                                          : 6
  4x4-bit multiplier                                    : 6
-# Adders/Subtractors                                   : 120
+# Adders/Subtractors                                   : 122
  10-bit subtractor                                     : 1
  16-bit adder                                          : 1
  16-bit subtractor                                     : 1
  2-bit adder                                           : 1
  3-bit adder                                           : 2
  3-bit subtractor                                      : 3
+ 32-bit adder                                          : 1
  4-bit adder                                           : 7
  4-bit adder carry in                                  : 28
  5-bit adder                                           : 8
- 5-bit subtractor                                      : 6
+ 5-bit subtractor                                      : 7
  6-bit adder carry in                                  : 12
  7-bit adder                                           : 7
  7-bit adder carry in                                  : 28
@@ -934,14 +939,14 @@ Macro Statistics
  9-bit up counter                                      : 1
 # Registers                                            : 271
  Flip-Flops                                            : 271
-# Comparators                                          : 118
+# Comparators                                          : 117
  10-bit comparator equal                               : 3
  10-bit comparator lessequal                           : 7
  11-bit comparator lessequal                           : 4
  2-bit comparator greater                              : 1
  3-bit comparator greater                              : 1
  3-bit comparator lessequal                            : 1
- 4-bit comparator greater                              : 4
+ 4-bit comparator greater                              : 3
  4-bit comparator lessequal                            : 9
  5-bit comparator greater                              : 1
  5-bit comparator lessequal                            : 7
@@ -952,14 +957,16 @@ Macro Statistics
  9-bit comparator greater                              : 13
  9-bit comparator lessequal                            : 11
 # Multiplexers                                         : 634
- 1-bit 2-to-1 multiplexer                              : 413
+ 1-bit 16-to-1 multiplexer                             : 1
+ 1-bit 2-to-1 multiplexer                              : 411
  1-bit 3-to-1 multiplexer                              : 18
- 1-bit 4-to-1 multiplexer                              : 2
+ 1-bit 4-to-1 multiplexer                              : 1
  10-bit 2-to-1 multiplexer                             : 15
  12-bit 2-to-1 multiplexer                             : 36
- 16-bit 2-to-1 multiplexer                             : 12
+ 16-bit 2-to-1 multiplexer                             : 13
  2-bit 2-to-1 multiplexer                              : 2
  3-bit 2-to-1 multiplexer                              : 9
+ 32-bit 2-to-1 multiplexer                             : 1
  4-bit 2-to-1 multiplexer                              : 21
  7-bit 2-to-1 multiplexer                              : 9
  8-bit 2-to-1 multiplexer                              : 28
@@ -984,19 +991,7 @@ Optimizing FSM <d/FSM_0> on signal <STATE[1:3]> with user encoding.
  011   | 011
  100   | 100
 -------------------
-WARNING:Xst:2677 - Node <answer[6]_PWR_28_o_mod_32/Madd_GND_33_o_b[3]_add_1_OUT_Madd_Madd1> of sequential type is unconnected in block <keyboard>.
-WARNING:Xst:2677 - Node <speed_4> of sequential type is unconnected in block <display>.
-WARNING:Xst:2677 - Node <speed_5> of sequential type is unconnected in block <display>.
-WARNING:Xst:2677 - Node <speed_6> of sequential type is unconnected in block <display>.
-WARNING:Xst:2677 - Node <speed_7> of sequential type is unconnected in block <display>.
-WARNING:Xst:2677 - Node <speed_8> of sequential type is unconnected in block <display>.
-WARNING:Xst:2677 - Node <speed_9> of sequential type is unconnected in block <display>.
-WARNING:Xst:2677 - Node <speed_10> of sequential type is unconnected in block <display>.
-WARNING:Xst:2677 - Node <speed_11> of sequential type is unconnected in block <display>.
-WARNING:Xst:2677 - Node <speed_12> of sequential type is unconnected in block <display>.
-WARNING:Xst:2677 - Node <speed_13> of sequential type is unconnected in block <display>.
-WARNING:Xst:2677 - Node <speed_14> of sequential type is unconnected in block <display>.
-WARNING:Xst:2677 - Node <speed_15> of sequential type is unconnected in block <display>.
+WARNING:Xst:2677 - Node <answer[6]_PWR_29_o_mod_32/Madd_GND_33_o_b[3]_add_1_OUT_Madd_Madd1> of sequential type is unconnected in block <keyboard>.
 WARNING:Xst:2677 - Node <DIVIDER_8> of sequential type is unconnected in block <display>.
 WARNING:Xst:3002 - This design contains one or more registers/latches that are directly
    incompatible with the Spartan6 architecture. The two primary causes of this is
@@ -1040,7 +1035,6 @@ Optimizing unit <calculator> ...
 Optimizing unit <keyboard> ...
 
 Optimizing unit <display> ...
-WARNING:Xst:2677 - Node <speed_3> of sequential type is unconnected in block <display>.
 WARNING:Xst:1293 - FF/Latch <locexp1_7> has a constant value of 0 in block <display>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <locexp1_8> has a constant value of 0 in block <display>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <locexp2_7> has a constant value of 0 in block <display>. This FF/Latch will be trimmed during the optimization process.
@@ -1049,8 +1043,8 @@ WARNING:Xst:1293 - FF/Latch <locexp3_7> has a constant value of 0 in block <disp
 WARNING:Xst:1293 - FF/Latch <locexp3_8> has a constant value of 0 in block <display>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <loc1_8> (without init value) has a constant value of 0 in block <display>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <loc1_7> (without init value) has a constant value of 0 in block <display>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <locexp1_8> has a constant value of 0 in block <display>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <locexp1_7> has a constant value of 0 in block <display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <locexp1_8> has a constant value of 0 in block <display>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <locexp2_7> has a constant value of 0 in block <display>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <locexp2_8> has a constant value of 0 in block <display>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <locexp3_7> has a constant value of 0 in block <display>. This FF/Latch will be trimmed during the optimization process.
@@ -1100,12 +1094,12 @@ WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ans5_9> (without in
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block calculator, actual ratio is 18.
+Found area constraint ratio of 100 (+ 5) on block calculator, actual ratio is 20.
 WARNING:Xst:1426 - The value init of the FF/Latch d/locexp6_6_LD hinder the constant cleaning in the block calculator.
    You should achieve better results by setting this init to 1.
 WARNING:Xst:1426 - The value init of the FF/Latch d/locexp6_5_LD hinder the constant cleaning in the block calculator.
    You should achieve better results by setting this init to 0.
-FlipFlop score_3 has been replicated 1 time(s)
+FlipFlop score_2 has been replicated 1 time(s)
 
 Final Macro Processing ...
 
@@ -1113,8 +1107,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 296
- Flip-Flops                                            : 296
+# Registers                                            : 309
+ Flip-Flops                                            : 309
 
 =========================================================================
 
@@ -1137,26 +1131,27 @@ Top Level Output File Name         : calculator.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 1750
+# BELS                             : 1908
 #      GND                         : 1
-#      INV                         : 22
-#      LUT1                        : 30
-#      LUT2                        : 77
-#      LUT3                        : 127
-#      LUT4                        : 252
-#      LUT5                        : 310
-#      LUT6                        : 699
-#      MUXCY                       : 108
-#      MUXF7                       : 43
+#      INV                         : 23
+#      LUT1                        : 43
+#      LUT2                        : 78
+#      LUT3                        : 156
+#      LUT4                        : 268
+#      LUT5                        : 291
+#      LUT6                        : 784
+#      MUXCY                       : 121
+#      MUXF7                       : 48
+#      MUXF8                       : 1
 #      VCC                         : 1
-#      XORCY                       : 80
-# FlipFlops/Latches                : 318
+#      XORCY                       : 93
+# FlipFlops/Latches                : 331
 #      FD                          : 19
 #      FD_1                        : 12
 #      FDC                         : 93
-#      FDC_1                       : 47
+#      FDC_1                       : 44
 #      FDCE                        : 37
-#      FDCE_1                      : 12
+#      FDCE_1                      : 28
 #      FDE                         : 42
 #      FDE_1                       : 8
 #      FDP                         : 10
@@ -1180,16 +1175,16 @@ Selected Device : 6slx16csg324-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:             318  out of  18224     1%  
- Number of Slice LUTs:                 1517  out of   9112    16%  
-    Number used as Logic:              1517  out of   9112    16%  
+ Number of Slice Registers:             331  out of  18224     1%  
+ Number of Slice LUTs:                 1643  out of   9112    18%  
+    Number used as Logic:              1643  out of   9112    18%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:   1543
-   Number with an unused Flip Flop:    1225  out of   1543    79%  
-   Number with an unused LUT:            26  out of   1543     1%  
-   Number of fully used LUT-FF pairs:   292  out of   1543    18%  
-   Number of unique control sets:        31
+ Number of LUT Flip Flop pairs used:   1670
+   Number with an unused Flip Flop:    1339  out of   1670    80%  
+   Number with an unused LUT:            27  out of   1670     1%  
+   Number of fully used LUT-FF pairs:   304  out of   1670    18%  
+   Number of unique control sets:        32
 
 IO Utilization: 
  Number of IOs:                          52
@@ -1224,8 +1219,8 @@ c/divider_7                        | BUFG                   | 130   |
 clk                                | BUFGP                  | 34    |
 k/C1/num_14                        | BUFG                   | 20    |
 k/_n0147(k/out1:O)                 | NONE(*)(k/DECODE_BCD_0)| 4     |
-d/DIVIDER_7                        | BUFG                   | 96    |
-d/_n2542(d/out1:O)                 | NONE(*)(d/loc2_0)      | 16    |
+d/DIVIDER_7                        | BUFG                   | 109   |
+d/_n2504(d/out1:O)                 | NONE(*)(d/loc2_0)      | 16    |
 d/update                           | NONE(g/num1_5)         | 16    |
 rst                                | IBUF+BUFG              | 2     |
 -----------------------------------+------------------------+-------+
@@ -1242,8 +1237,8 @@ Timing Summary:
 ---------------
 Speed Grade: -3
 
-   Minimum period: 9.785ns (Maximum Frequency: 102.195MHz)
-   Minimum input arrival time before clock: 5.183ns
+   Minimum period: 10.111ns (Maximum Frequency: 98.905MHz)
+   Minimum input arrival time before clock: 5.190ns
    Maximum output required time after clock: 5.072ns
    Maximum combinational path delay: No path found
 
@@ -1253,10 +1248,10 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'c/divider_7'
-  Clock period: 9.785ns (frequency: 102.195MHz)
-  Total number of paths / destination ports: 133279 / 167
+  Clock period: 10.111ns (frequency: 98.905MHz)
+  Total number of paths / destination ports: 132208 / 167
 -------------------------------------------------------------------------
-Delay:               9.785ns (Levels of Logic = 9)
+Delay:               10.111ns (Levels of Logic = 9)
   Source:            score_5 (FF)
   Destination:       ans5_0 (FF)
   Source Clock:      c/divider_7 rising
@@ -1266,20 +1261,20 @@ Delay:               9.785ns (Levels of Logic = 9)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDCE:C->Q            14   0.447   1.062  score_5 (score_5)
-     LUT2:I0->O            7   0.203   0.878  g/Mmux_op_fin_rs_xor<1>1_SW0 (N135)
-     LUT6:I4->O           25   0.203   1.193  g/BUS_0001_op_fin[3]_AND_1_o (g/BUS_0001_op_fin[3]_AND_1_o)
-     LUT6:I5->O           33   0.205   1.306  GND_1_o_GND_1_o_mux_135_OUT<12>1 (GND_1_o_GND_1_o_mux_135_OUT<0>)
-     LUT6:I5->O            4   0.205   0.684  GND_1_o_GND_1_o_div_188/o<2>1 (GND_1_o_GND_1_o_div_188_OUT<2>)
-     LUT6:I5->O            6   0.205   0.745  GND_1_o_GND_1_o_div_188/Madd_GND_42_o_b[3]_add_7_OUT_Madd_Madd_lut<2>1 (GND_1_o_GND_1_o_div_188/Madd_GND_42_o_b[3]_add_7_OUT_Madd_Madd_lut<2>)
-     LUT6:I5->O            3   0.205   1.015  GND_1_o_GND_1_o_div_188/Mmux_n009831 (GND_1_o_GND_1_o_div_188/n0098<2>)
-     LUT6:I0->O            1   0.203   0.000  Mmux_ans5[9]_ans5[9]_mux_256_OUT18_SW0_G (N826)
-     MUXF7:I1->O           1   0.140   0.580  Mmux_ans5[9]_ans5[9]_mux_256_OUT18_SW0 (N215)
+     FDCE:C->Q            18   0.447   1.154  score_5 (score_5)
+     LUT2:I0->O            7   0.203   0.774  g/Mmux_op_fin_rs_xor<1>1_SW0 (N135)
+     LUT6:I5->O           23   0.205   1.154  g/BUS_0001_op_fin[3]_AND_1_o (g/BUS_0001_op_fin[3]_AND_1_o)
+     LUT6:I5->O           29   0.205   1.354  g/Mmux_num2_fin21 (tmp_exp<1>)
+     LUT5:I3->O            3   0.203   0.755  GND_1_o_GND_1_o_div_188/Mmux_a[0]_GND_42_o_MUX_553_o131_SW1 (N159)
+     LUT6:I4->O            4   0.203   0.684  GND_1_o_GND_1_o_div_188/Mmux_a[0]_GND_42_o_MUX_553_o131 (GND_1_o_GND_1_o_div_188/a[3]_GND_42_o_MUX_550_o)
+     LUT4:I3->O            3   0.205   0.651  GND_1_o_GND_1_o_div_188/o<1>11 (GND_1_o_GND_1_o_div_188_OUT<1>)
+     LUT6:I5->O            2   0.205   0.617  GND_1_o_GND_1_o_div_188/Mmux_n009841 (GND_1_o_GND_1_o_div_188/n0098<3>)
+     LUT5:I4->O            1   0.205   0.580  Mmux_ans5[9]_ans5[9]_mux_256_OUT18_SW0 (N215)
      LUT6:I5->O            1   0.205   0.000  Mmux_ans5[9]_ans5[9]_mux_256_OUT18 (ans5[9]_ans5[9]_mux_256_OUT<0>)
      FDE:D                     0.102          ans5_0
     ----------------------------------------
-    Total                      9.785ns (2.323ns logic, 7.462ns route)
-                                       (23.7% logic, 76.3% route)
+    Total                     10.111ns (2.388ns logic, 7.723ns route)
+                                       (23.6% logic, 76.4% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
@@ -1327,10 +1322,10 @@ Delay:               2.941ns (Levels of Logic = 1)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'd/DIVIDER_7'
-  Clock period: 9.245ns (frequency: 108.165MHz)
-  Total number of paths / destination ports: 55123 / 122
+  Clock period: 9.111ns (frequency: 109.755MHz)
+  Total number of paths / destination ports: 52499 / 151
 -------------------------------------------------------------------------
-Delay:               9.245ns (Levels of Logic = 13)
+Delay:               9.111ns (Levels of Logic = 12)
   Source:            d/INDEX_0 (FF)
   Destination:       d/LCD_DATA_3 (FF)
   Source Clock:      d/DIVIDER_7 falling
@@ -1340,31 +1335,30 @@ Delay:               9.245ns (Levels of Logic = 13)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDCE:C->Q            68   0.447   1.914  d/INDEX_0 (d/INDEX_0)
-     LUT4:I0->O            1   0.203   0.000  d/Mcompar_loc2[8]_INDEX[8]_LessThan_290_o_lut<0> (d/Mcompar_loc2[8]_INDEX[8]_LessThan_290_o_lut<0>)
-     MUXCY:S->O            1   0.172   0.000  d/Mcompar_loc2[8]_INDEX[8]_LessThan_290_o_cy<0> (d/Mcompar_loc2[8]_INDEX[8]_LessThan_290_o_cy<0>)
-     MUXCY:CI->O           1   0.019   0.000  d/Mcompar_loc2[8]_INDEX[8]_LessThan_290_o_cy<1> (d/Mcompar_loc2[8]_INDEX[8]_LessThan_290_o_cy<1>)
-     MUXCY:CI->O           1   0.019   0.000  d/Mcompar_loc2[8]_INDEX[8]_LessThan_290_o_cy<2> (d/Mcompar_loc2[8]_INDEX[8]_LessThan_290_o_cy<2>)
-     MUXCY:CI->O           1   0.019   0.000  d/Mcompar_loc2[8]_INDEX[8]_LessThan_290_o_cy<3> (d/Mcompar_loc2[8]_INDEX[8]_LessThan_290_o_cy<3>)
-     MUXCY:CI->O          10   0.213   0.857  d/Mcompar_loc2[8]_INDEX[8]_LessThan_290_o_cy<4> (d/Mcompar_loc2[8]_INDEX[8]_LessThan_290_o_cy<4>)
-     LUT2:I1->O            5   0.205   0.943  d/INDEX[8]_loc2[8]_AND_111_o1 (d/INDEX[8]_loc2[8]_AND_111_o)
-     LUT6:I3->O            1   0.205   0.000  d/Mmux_loc231_F (N827)
-     MUXF7:I0->O           5   0.131   0.715  d/Mmux_loc231 (d/Mmux_loc23)
-     LUT5:I4->O            1   0.205   0.808  d/Msub_GND_7_o_GND_7_o_sub_421_OUT<2:0>_lut<0>1 (d/Msub_GND_7_o_GND_7_o_sub_421_OUT<2:0>_lut<0>)
-     LUT5:I2->O            9   0.205   0.829  d/Msub_GND_7_o_GND_7_o_sub_421_OUT<2:0>_xor<2>11 (d/GND_7_o_GND_7_o_sub_421_OUT<2>)
-     MUXF7:S->O            1   0.148   0.684  d_Mram__n34013 (d/_n3401<12>)
-     LUT6:I4->O            1   0.203   0.000  d/Mmux_LCD_DATA[7]_GND_7_o_mux_930_OUT1715 (d/LCD_DATA[7]_GND_7_o_mux_930_OUT<3>)
+     FDCE:C->Q            70   0.447   1.927  d/INDEX_0 (d/INDEX_0)
+     LUT4:I0->O            1   0.203   0.000  d/Mcompar_loc1[8]_INDEX[8]_LessThan_281_o_lut<0> (d/Mcompar_loc1[8]_INDEX[8]_LessThan_281_o_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  d/Mcompar_loc1[8]_INDEX[8]_LessThan_281_o_cy<0> (d/Mcompar_loc1[8]_INDEX[8]_LessThan_281_o_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  d/Mcompar_loc1[8]_INDEX[8]_LessThan_281_o_cy<1> (d/Mcompar_loc1[8]_INDEX[8]_LessThan_281_o_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  d/Mcompar_loc1[8]_INDEX[8]_LessThan_281_o_cy<2> (d/Mcompar_loc1[8]_INDEX[8]_LessThan_281_o_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  d/Mcompar_loc1[8]_INDEX[8]_LessThan_281_o_cy<3> (d/Mcompar_loc1[8]_INDEX[8]_LessThan_281_o_cy<3>)
+     MUXCY:CI->O          25   0.213   1.193  d/Mcompar_loc1[8]_INDEX[8]_LessThan_281_o_cy<4> (d/Mcompar_loc1[8]_INDEX[8]_LessThan_281_o_cy<4>)
+     LUT2:I1->O           10   0.205   0.857  d/INDEX[8]_loc1[8]_AND_110_o1 (d/INDEX[8]_loc1[8]_AND_110_o)
+     LUT6:I5->O            1   0.205   0.684  d/Mmux_numberpattern208 (d/Mmux_numberpattern207)
+     LUT6:I4->O           18   0.203   1.414  d/Mmux_numberpattern2010 (d/numberpattern<3>)
+     LUT6:I0->O            1   0.203   0.000  d_Mram__n3296111_G (d_N104)
+     MUXF7:I1->O           1   0.140   0.684  d_Mram__n3296111 (d/_n3296<4>)
+     LUT6:I4->O            1   0.203   0.000  d/Mmux_LCD_DATA[7]_GND_7_o_mux_933_OUT1718 (d/LCD_DATA[7]_GND_7_o_mux_933_OUT<3>)
      FDE_1:D                   0.102          d/LCD_DATA_3
     ----------------------------------------
-    Total                      9.245ns (2.496ns logic, 6.749ns route)
-                                       (27.0% logic, 73.0% route)
+    Total                      9.111ns (2.353ns logic, 6.758ns route)
+                                       (25.8% logic, 74.2% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'd/update'
-  Clock period: 2.608ns (frequency: 383.366MHz)
+  Clock period: 2.582ns (frequency: 387.283MHz)
   Total number of paths / destination ports: 19 / 16
 -------------------------------------------------------------------------
-Delay:               2.608ns (Levels of Logic = 1)
+Delay:               2.582ns (Levels of Logic = 1)
   Source:            g/op_0 (FF)
   Destination:       g/op_3 (FF)
   Source Clock:      d/update rising
@@ -1374,18 +1368,18 @@ Delay:               2.608ns (Levels of Logic = 1)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC:C->Q             81   0.447   1.856  g/op_0 (g/op_0)
+     FDC:C->Q             77   0.447   1.830  g/op_0 (g/op_0)
      LUT2:I0->O            1   0.203   0.000  g/Mxor_op[1]_op[0]_XOR_3_o_xo<0>1 (g/op[1]_op[0]_XOR_3_o)
      FDC:D                     0.102          g/op_3
     ----------------------------------------
-    Total                      2.608ns (0.752ns logic, 1.856ns route)
-                                       (28.8% logic, 71.2% route)
+    Total                      2.582ns (0.752ns logic, 1.830ns route)
+                                       (29.1% logic, 70.9% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'c/divider_7'
   Total number of paths / destination ports: 130 / 130
 -------------------------------------------------------------------------
-Offset:              5.183ns (Levels of Logic = 2)
+Offset:              5.190ns (Levels of Logic = 2)
   Source:            rst (PAD)
   Destination:       correct (FF)
   Destination Clock: c/divider_7 rising
@@ -1395,17 +1389,17 @@ Offset:              5.183ns (Levels of Logic = 2)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      IBUF:I->O            31   1.222   1.277  rst_IBUF (rst_IBUF)
-     INV:I->O            195   0.206   2.048  rst_IBUF_BUFG_LUT1_INV_0 (rst_IBUF_BUFG_LUT1)
+     INV:I->O            208   0.206   2.055  rst_IBUF_BUFG_LUT1_INV_0 (rst_IBUF_BUFG_LUT1)
      FDCE:CLR                  0.430          correct
     ----------------------------------------
-    Total                      5.183ns (1.858ns logic, 3.325ns route)
+    Total                      5.190ns (1.858ns logic, 3.332ns route)
                                        (35.8% logic, 64.2% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
   Total number of paths / destination ports: 31 / 19
 -------------------------------------------------------------------------
-Offset:              5.183ns (Levels of Logic = 2)
+Offset:              5.190ns (Levels of Logic = 2)
   Source:            rst (PAD)
   Destination:       c/divider_0 (FF)
   Destination Clock: clk rising
@@ -1415,10 +1409,10 @@ Offset:              5.183ns (Levels of Logic = 2)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      IBUF:I->O            31   1.222   1.277  rst_IBUF (rst_IBUF)
-     INV:I->O            195   0.206   2.048  rst_IBUF_BUFG_LUT1_INV_0 (rst_IBUF_BUFG_LUT1)
+     INV:I->O            208   0.206   2.055  rst_IBUF_BUFG_LUT1_INV_0 (rst_IBUF_BUFG_LUT1)
      FDC:CLR                   0.430          d/DIVIDER_1
     ----------------------------------------
-    Total                      5.183ns (1.858ns logic, 3.325ns route)
+    Total                      5.190ns (1.858ns logic, 3.332ns route)
                                        (35.8% logic, 64.2% route)
 
 =========================================================================
@@ -1426,15 +1420,15 @@ Timing constraint: Default OFFSET IN BEFORE for Clock 'k/C1/num_14'
   Total number of paths / destination ports: 40 / 16
 -------------------------------------------------------------------------
 Offset:              4.291ns (Levels of Logic = 3)
-  Source:            COLUMN<3> (PAD)
+  Source:            COLUMN<1> (PAD)
   Destination:       k/D1/DEBOUNCE_COUNT_3 (FF)
   Destination Clock: k/C1/num_14 rising
 
-  Data Path: COLUMN<3> to k/D1/DEBOUNCE_COUNT_3
+  Data Path: COLUMN<1> to k/D1/DEBOUNCE_COUNT_3
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             1   1.222   0.827  COLUMN_3_IBUF (COLUMN_3_IBUF)
+     IBUF:I->O             1   1.222   0.827  COLUMN_1_IBUF (COLUMN_1_IBUF)
      LUT6:I2->O            9   0.203   0.830  k/Mmux_PRESS11 (k/PRESS)
      LUT5:I4->O            4   0.205   0.683  k/D1/_n0016_inv1 (k/D1/_n0016_inv)
      FDCE:CE                   0.322          k/D1/DEBOUNCE_COUNT_0
@@ -1444,9 +1438,9 @@ Offset:              4.291ns (Levels of Logic = 3)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'd/DIVIDER_7'
-  Total number of paths / destination ports: 84 / 84
+  Total number of paths / destination ports: 97 / 97
 -------------------------------------------------------------------------
-Offset:              5.183ns (Levels of Logic = 2)
+Offset:              5.190ns (Levels of Logic = 2)
   Source:            rst (PAD)
   Destination:       d/STATE_FSM_FFd2 (FF)
   Destination Clock: d/DIVIDER_7 falling
@@ -1456,17 +1450,17 @@ Offset:              5.183ns (Levels of Logic = 2)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      IBUF:I->O            31   1.222   1.277  rst_IBUF (rst_IBUF)
-     INV:I->O            195   0.206   2.048  rst_IBUF_BUFG_LUT1_INV_0 (rst_IBUF_BUFG_LUT1)
+     INV:I->O            208   0.206   2.055  rst_IBUF_BUFG_LUT1_INV_0 (rst_IBUF_BUFG_LUT1)
      FDC_1:CLR                 0.430          d/update
     ----------------------------------------
-    Total                      5.183ns (1.858ns logic, 3.325ns route)
+    Total                      5.190ns (1.858ns logic, 3.332ns route)
                                        (35.8% logic, 64.2% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'd/update'
   Total number of paths / destination ports: 16 / 16
 -------------------------------------------------------------------------
-Offset:              5.183ns (Levels of Logic = 2)
+Offset:              5.190ns (Levels of Logic = 2)
   Source:            rst (PAD)
   Destination:       g/num1_5 (FF)
   Destination Clock: d/update rising
@@ -1476,10 +1470,10 @@ Offset:              5.183ns (Levels of Logic = 2)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      IBUF:I->O            31   1.222   1.277  rst_IBUF (rst_IBUF)
-     INV:I->O            195   0.206   2.048  rst_IBUF_BUFG_LUT1_INV_0 (rst_IBUF_BUFG_LUT1)
+     INV:I->O            208   0.206   2.055  rst_IBUF_BUFG_LUT1_INV_0 (rst_IBUF_BUFG_LUT1)
      FDP:PRE                   0.430          g/num2_0
     ----------------------------------------
-    Total                      5.183ns (1.858ns logic, 3.325ns route)
+    Total                      5.190ns (1.858ns logic, 3.332ns route)
                                        (35.8% logic, 64.2% route)
 
 =========================================================================
@@ -1545,7 +1539,7 @@ Offset:              4.886ns (Levels of Logic = 2)
 Timing constraint: Default OFFSET OUT AFTER for Clock 'k/C1/num_14'
   Total number of paths / destination ports: 4 / 4
 -------------------------------------------------------------------------
-Offset:              3.874ns (Levels of Logic = 1)
+Offset:              3.926ns (Levels of Logic = 1)
   Source:            k/ENABLE_3 (FF)
   Destination:       ENABLE<3> (PAD)
   Source Clock:      k/C1/num_14 rising
@@ -1554,11 +1548,11 @@ Offset:              3.874ns (Levels of Logic = 1)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q              10   0.447   0.856  k/ENABLE_3 (k/ENABLE_3)
+     FD:C->Q              12   0.447   0.908  k/ENABLE_3 (k/ENABLE_3)
      OBUF:I->O                 2.571          ENABLE_3_OBUF (ENABLE<3>)
     ----------------------------------------
-    Total                      3.874ns (3.018ns logic, 0.856ns route)
-                                       (77.9% logic, 22.1% route)
+    Total                      3.926ns (3.018ns logic, 0.908ns route)
+                                       (76.9% logic, 23.1% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'k/_n0147'
@@ -1590,10 +1584,10 @@ Clock to Setup on destination clock c/divider_7
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-c/divider_7    |    9.785|         |         |         |
-d/DIVIDER_7    |         |    5.806|         |         |
-d/update       |   16.347|         |         |         |
-k/C1/num_14    |         |   14.490|         |         |
+c/divider_7    |   10.111|         |         |         |
+d/DIVIDER_7    |         |    5.810|         |         |
+d/update       |   16.219|         |         |         |
+k/C1/num_14    |         |   14.693|         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock clk
@@ -1610,19 +1604,19 @@ Clock to Setup on destination clock d/DIVIDER_7
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-c/divider_7    |         |         |   11.697|         |
-d/DIVIDER_7    |         |         |    9.245|         |
-d/_n2542       |         |         |    9.429|         |
-rst            |         |         |    6.580|         |
+c/divider_7    |         |         |   12.389|         |
+d/DIVIDER_7    |         |         |    9.111|         |
+d/_n2504       |         |         |    9.306|         |
+rst            |         |         |    6.445|         |
 ---------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock d/_n2542
+Clock to Setup on destination clock d/_n2504
 ---------------+---------+---------+---------+---------+
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-d/DIVIDER_7    |         |         |    2.671|         |
-rst            |         |         |    3.046|         |
+d/DIVIDER_7    |         |         |    2.863|         |
+rst            |         |         |    3.320|         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock d/update
@@ -1630,7 +1624,7 @@ Clock to Setup on destination clock d/update
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-d/update       |    2.608|         |         |         |
+d/update       |    2.582|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock k/C1/num_14
@@ -1638,7 +1632,7 @@ Clock to Setup on destination clock k/C1/num_14
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-c/divider_7    |         |         |    3.814|         |
+c/divider_7    |         |         |    3.816|         |
 clk            |    4.011|         |    3.770|         |
 k/C1/num_14    |    2.991|         |    2.941|         |
 ---------------+---------+---------+---------+---------+
@@ -1648,21 +1642,21 @@ Clock to Setup on destination clock k/_n0147
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-c/divider_7    |         |         |    4.943|         |
-k/C1/num_14    |         |         |    9.118|         |
+c/divider_7    |         |         |    4.807|         |
+k/C1/num_14    |         |         |    9.822|         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 23.00 secs
-Total CPU time to Xst completion: 23.47 secs
+Total REAL time to Xst completion: 29.00 secs
+Total CPU time to Xst completion: 28.99 secs
  
 --> 
 
-Total memory usage is 274276 kilobytes
+Total memory usage is 280072 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  191 (   0 filtered)
+Number of warnings :  178 (   0 filtered)
 Number of infos    :   10 (   0 filtered)
 

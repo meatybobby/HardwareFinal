@@ -1,8 +1,8 @@
 INTSTYLE=ise
-INFILE=C:\Users\NTHUCS\final\HardwareFinal\calculator.ncd
-OUTFILE=C:\Users\NTHUCS\final\HardwareFinal\calculator.bit
+INFILE=C:\Users\Bobby\HardwareFinal\calculator.ncd
+OUTFILE=C:\Users\Bobby\HardwareFinal\calculator.bit
 FAMILY=Spartan6
 PART=xc6slx16-3csg324
-WORKINGDIR=C:\Users\NTHUCS\final\HardwareFinal
+WORKINGDIR=C:\Users\Bobby\HardwareFinal
 LICENSE=WebPack
-USER_INFO=210947646_0_0_878
+USER_INFO=210978200_0_0_977

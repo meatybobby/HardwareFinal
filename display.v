@@ -43,7 +43,7 @@ module display(CLK, RESET,
   wire   LCD_CS1;
   wire   LCD_CS2; 
   wire   LCD_ENABLE;
-  wire[1:0] lvbit;
+  wire[3:0] lvbit;
   reg last_update;
   reg[8:0] locexp1 = 0;
   reg[8:0] locexp2 = 0;
@@ -847,7 +847,7 @@ always @(INDEX)
      begin
 		if(locexp1>=64||locexp2>=64||locexp3>=64) update=1;
 		else update=0;
-		speed<=speed+1;
+		if(!speed[lvbit]&&X_PAGE==3'o3) speed<=speed+1;
 		if(update) begin
 			locexp4 = locexp1;
 			locexp5 = locexp2;
@@ -1076,5 +1076,5 @@ always @(INDEX)
   assign LCD_ENABLE = ENABLE[0];
   assign LCD_CS1    = LCD_SEL[0];
   assign LCD_CS2    = LCD_SEL[1];
-  assign lvbit = (LV>3?0:(LV>2?1:2));
+  assign lvbit = (LV>2?10-LV+2:10);
 endmodule 
