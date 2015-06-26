@@ -37,26 +37,41 @@ Setup/Hold to clock clk
             |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
 Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
 ------------+------------+------------+------------+------------+------------------+--------+
-rst         |    5.249(R)|      SLOW  |   -2.175(R)|      FAST  |clk_BUFGP         |   0.000|
+COLUMN<0>   |    1.424(R)|      SLOW  |   -0.345(R)|      SLOW  |clk_BUFGP         |   0.000|
+COLUMN<1>   |    1.399(R)|      SLOW  |   -0.320(R)|      SLOW  |clk_BUFGP         |   0.000|
+COLUMN<2>   |    1.287(R)|      SLOW  |   -0.215(R)|      SLOW  |clk_BUFGP         |   0.000|
+COLUMN<3>   |    1.374(R)|      SLOW  |   -0.298(R)|      SLOW  |clk_BUFGP         |   0.000|
+rst         |    7.304(R)|      SLOW  |   -4.398(R)|      FAST  |clk_BUFGP         |   0.000|
 ------------+------------+------------+------------+------------+------------------+--------+
+
+Clock clk to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+ROW<0>      |         7.805(R)|      SLOW  |         3.953(R)|      FAST  |clk_BUFGP         |   0.000|
+ROW<1>      |         7.959(R)|      SLOW  |         4.036(R)|      FAST  |clk_BUFGP         |   0.000|
+ROW<2>      |         7.896(R)|      SLOW  |         3.981(R)|      FAST  |clk_BUFGP         |   0.000|
+ROW<3>      |         7.529(R)|      SLOW  |         3.765(R)|      FAST  |clk_BUFGP         |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
 
 Clock to Setup on destination clock clk
 ---------------+---------+---------+---------+---------+
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |    1.681|         |         |         |
+clk            |    1.901|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
-Analysis completed Thu Jun 25 16:44:28 2015 
+Analysis completed Fri Jun 26 13:18:17 2015 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 225 MB
+Peak Memory Usage: 237 MB
 
 
 

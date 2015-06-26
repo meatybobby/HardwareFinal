@@ -1,3 +1,6 @@
+verilog work "DEBOUNCE_CLK.v"
+verilog work "clock_divider.v"
+verilog work "keyboard.v"
 verilog work "generator.v"
 verilog work "display.v"
 verilog work "calculator.v"

@@ -1,16 +1,12 @@
-/*************************************** 
- *    LGM Display One Row String And   *
- *  Shift From Right To Left Repeatly  *
- * Filename : SHIFT_RIGHT_LEFT_PAGE.v  *
- ***************************************/
-
 module display(CLK, RESET,
        LCD_ENABLE, LCD_RW, LCD_DI, LCD_CS1,
-       LCD_CS2, LCD_RST, LCD_DATA,exp1,exp2,exp3,exp4,exp5,exp6);
+       LCD_CS2, LCD_RST, LCD_DATA,exp1,exp2,exp3,exp4,exp5,exp6,update,score,Life);
 
   input  CLK;
   input  RESET;
   input[11:0]  exp1,exp2,exp3,exp4,exp5,exp6;
+  input[1:0] Life;
+  input[6:0] score;
   output LCD_ENABLE; 
   output LCD_RW;
   output LCD_DI;
@@ -18,7 +14,9 @@ module display(CLK, RESET,
   output LCD_CS2;
   output LCD_RST;
   output [7:0]  LCD_DATA;
-
+  output update;
+  wire[3:0]LV;
+  assign LV = score/10 +1 ;
   reg    [7:0]  LCD_DATA;
   reg    [7:0]  UPPER_PATTERN;
   reg    [7:0]  LOWER_PATTERN;
@@ -42,22 +40,21 @@ module display(CLK, RESET,
   wire   LCD_CS1;
   wire   LCD_CS2; 
   wire   LCD_ENABLE;
+  reg last_update;
   reg[8:0] locexp1 = 0;
   reg[8:0] locexp2 = 0;
   reg[8:0] locexp3 = 0;
   reg[8:0] locexp4 = 9'h20; 
   reg[8:0] locexp5 = 9'h20;
   reg[8:0] locexp6 = 9'h20;
-  reg[11:0] last_exp4,last_exp5,last_exp6;
   reg[11:0]number1;
   reg[11:0]number2;
   reg[3:0]numberpattern;
   reg[8:0]loc1;
   reg[8:0]loc2;
   reg[8:0]loc;
+  reg update;
   
-  reg[3:0]LV = 2;
-  reg[2:0]Life = 2;
   reg[11:0]speed =0;
 /*****************************
  * Set ROM's Display Pattern *
@@ -393,8 +390,8 @@ always @(INDEX)
     else
 	 begin
 		numberpattern = 4'hE;
+		loc = 0;
 	 end
-	
 	 
 	case ( (INDEX-loc)%8 +8*numberpattern )  
      9'h000  :  UPPER_PATTERN = 8'h00; // 0
@@ -518,9 +515,8 @@ always @(INDEX)
 	 default :  UPPER_PATTERN = 8'h00;  
     endcase 
 	if(numberpattern == 4'hE)
-		UPPER_PATTERN = 8'h00; 
+		UPPER_PATTERN = 8'h00;
    end
-    
   always @(INDEX)
    begin
 	 
@@ -684,25 +680,22 @@ always @(INDEX)
 		locexp1 = 0;
 		locexp2 = 0;
 		locexp3 = 0;
-		last_exp4 = 12'h000;
-		last_exp5 = 12'h000;
-		last_exp6 = 12'h000;
+		update=0;
      end 
     else
      begin
 		  speed = speed +1;
-		 if(last_exp6!=exp6||last_exp4!=exp4||last_exp5!=exp5) begin
+		if(locexp1>=64||locexp2>=64||locexp3>=64) update=1;
+		else update=0;
+		if(update) begin
 			locexp4 = locexp1;
 			locexp5 = locexp2;
 			locexp6 = locexp3;
 			locexp1 = 0;
 			locexp2 = 0;
 			locexp3 = 0;
-			last_exp6 = exp6;
-			last_exp5 = exp5;
-			last_exp4 = exp4;
 		 end
-	     else if (ENABLE < 2'b10)
+		 if (ENABLE < 2'b10)
          begin       
 	       ENABLE  <= ENABLE + 1;
 	       DELAY[1]<= 1'b1;
@@ -810,7 +803,7 @@ always @(INDEX)
                STATE  <= 3'o3;
                LCD_SEL<= 2'b11;
                X_PAGE <= X_PAGE+1;
-			   if( X_PAGE == 3'o3 && speed[7] == 1)
+			   if( X_PAGE == 3'o3 && speed[9] == 1)
 				 begin
 					locexp1 = locexp1+1; 
 					locexp4 = locexp4+1; 
@@ -840,7 +833,7 @@ always @(INDEX)
                STATE  <= 3'o3;
                LCD_SEL<= 2'b11;
                X_PAGE <= X_PAGE + 1;
-			   if( X_PAGE == 3'o5 && speed[7] == 1)
+			   if( X_PAGE == 3'o5 && speed[9] == 1)
 				begin
 					locexp2 = locexp2+1; 
 					locexp5 = locexp5+1; 
@@ -870,7 +863,7 @@ always @(INDEX)
                STATE  <= 3'o3;
                LCD_SEL<= 2'b11;
                X_PAGE <= X_PAGE + 1;
-			   if( X_PAGE == 3'o7 && speed[7] == 1)
+			   if( X_PAGE == 3'o7 && speed[9] == 1)
 				begin
 					locexp3 = locexp3+1; 
 					locexp6 = locexp6+1; 
@@ -889,5 +882,4 @@ always @(INDEX)
   assign LCD_ENABLE = ENABLE[0];
   assign LCD_CS1    = LCD_SEL[0];
   assign LCD_CS2    = LCD_SEL[1];
-
 endmodule 

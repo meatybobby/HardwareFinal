@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2015-06-25T15:42:09</DateModified>
+  <DateModified>2015-06-26T09:53:46</DateModified>
   <ModuleName>calculator</ModuleName>
   <SummaryTimeStamp>2015-06-25T15:23:51</SummaryTimeStamp>
-  <SavedFilePath>C:/Users/NTHUCS/final/iseconfig/calculator.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/NTHUCS/final</ImplementationReportsDirectory>
+  <SavedFilePath>C:/Users/NTHUCS/final/HardwareFinal/iseconfig/calculator.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/Users/NTHUCS/final/HardwareFinal\</ImplementationReportsDirectory>
   <DateInitialized>2015-06-25T14:40:03</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
