@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Fri Jun 26 15:33:17 2015
+# Process ID: 1484
+# Log file: C:/Users/NTHUCS/final/HardwareFinal/planAhead_run_1/planAhead.log
+# Journal file: C:/Users/NTHUCS/final/HardwareFinal/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source C:/Users/NTHUCS/final/HardwareFinal/pa.fromNetlist.tcl

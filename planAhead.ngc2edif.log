@@ -1,0 +1,50 @@
+Release 14.7 - ngc2edif P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design calculator.ngc ...
+WARNING:NetListWriters:298 - No output is written to calculator.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus tmp_exp<11 : 0> on block calculator is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus GND_1_o_tmp_exp[11]_mux_69_OUT<11 : 0>
+   on block calculator is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus tmp_exp[11]_GND_1_o_mux_71_OUT<11 : 0>
+   on block calculator is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus exp2[11]_exp2[11]_mux_56_OUT<11 : 0> on
+   block calculator is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus exp3[11]_exp3[11]_mux_59_OUT<11 : 0> on
+   block calculator is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus exp1[11]_exp1[11]_mux_53_OUT<11 : 0> on
+   block calculator is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus GND_1_o_GND_1_o_mux_70_OUT<11 : 0> on
+   block calculator is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus Msub_GND_1_o_GND_1_o_sub_75_OUT_cy<2 :
+   0> on block calculator is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus Madd_n0406[4:0]_cy<2 : 0> on block
+   calculator is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus Msub_GND_1_o_GND_1_o_sub_111_OUT_cy<2 :
+   0> on block calculator is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus Madd_n0412[4:0]_cy<2 : 0> on block
+   calculator is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus Msub_GND_1_o_GND_1_o_sub_147_OUT_cy<2 :
+   0> on block calculator is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus Madd_n0418[4:0]_cy<2 : 0> on block
+   calculator is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus d/Result<9 : 0> on block calculator is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus d/_n3234<15 : 0> on block calculator is
+   not reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file calculator.edif ...
+ngc2edif: Total memory usage is 85260 kilobytes
+
