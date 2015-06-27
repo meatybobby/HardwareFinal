@@ -1,8 +1,8 @@
 INTSTYLE=impact
-INFILE=C:\Users\NTHUCS\final\HardwareFinal\impact.xsl
-OUTFILE=C:\Users\NTHUCS\final\HardwareFinal\impact.xsl
+INFILE=C:\Users\NTHUCS\Desktop\HardwareFinal\impact.xsl
+OUTFILE=C:\Users\NTHUCS\Desktop\HardwareFinal\impact.xsl
 FAMILY=Single
 PART=Single
-WORKINGDIR=C:\Users\NTHUCS\final\HardwareFinal
+WORKINGDIR=C:\Users\NTHUCS\Desktop\HardwareFinal
 LICENSE=iMPACT
 USER_INFO=iMPACT

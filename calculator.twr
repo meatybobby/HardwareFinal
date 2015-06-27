@@ -2,7 +2,7 @@
 Release 14.7 Trace  (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-D:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
 -n 3 -fastpaths -xml calculator.twx calculator.ncd -o calculator.twr
 calculator.pcf -ucf calculator.ucf
 
@@ -37,11 +37,10 @@ Setup/Hold to clock clk
             |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
 Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
 ------------+------------+------------+------------+------------+------------------+--------+
-COLUMN<0>   |    2.235(R)|      SLOW  |   -1.199(R)|      SLOW  |clk_BUFGP         |   0.000|
-COLUMN<1>   |    1.771(R)|      SLOW  |   -0.758(R)|      SLOW  |clk_BUFGP         |   0.000|
-COLUMN<2>   |    2.154(R)|      SLOW  |   -1.121(R)|      SLOW  |clk_BUFGP         |   0.000|
-COLUMN<3>   |    2.168(R)|      SLOW  |   -1.132(R)|      SLOW  |clk_BUFGP         |   0.000|
-rst         |    7.710(R)|      SLOW  |   -4.276(R)|      FAST  |clk_BUFGP         |   0.000|
+COLUMN<0>   |    1.837(R)|      SLOW  |   -0.822(R)|      SLOW  |clk_BUFGP         |   0.000|
+COLUMN<1>   |    2.233(R)|      SLOW  |   -1.196(R)|      SLOW  |clk_BUFGP         |   0.000|
+COLUMN<2>   |    2.041(R)|      SLOW  |   -1.017(R)|      SLOW  |clk_BUFGP         |   0.000|
+COLUMN<3>   |    2.240(R)|      SLOW  |   -1.204(R)|      SLOW  |clk_BUFGP         |   0.000|
 ------------+------------+------------+------------+------------+------------------+--------+
 
 Clock clk to Pad
@@ -49,10 +48,10 @@ Clock clk to Pad
             |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
 Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
-ROW<0>      |         8.346(R)|      SLOW  |         4.246(R)|      FAST  |clk_BUFGP         |   0.000|
-ROW<1>      |         8.500(R)|      SLOW  |         4.329(R)|      FAST  |clk_BUFGP         |   0.000|
-ROW<2>      |         8.413(R)|      SLOW  |         4.427(R)|      FAST  |clk_BUFGP         |   0.000|
-ROW<3>      |         8.046(R)|      SLOW  |         4.211(R)|      FAST  |clk_BUFGP         |   0.000|
+ROW<0>      |         8.372(R)|      SLOW  |         4.303(R)|      FAST  |clk_BUFGP         |   0.000|
+ROW<1>      |         8.526(R)|      SLOW  |         4.386(R)|      FAST  |clk_BUFGP         |   0.000|
+ROW<2>      |         8.080(R)|      SLOW  |         4.240(R)|      FAST  |clk_BUFGP         |   0.000|
+ROW<3>      |         8.329(R)|      SLOW  |         4.400(R)|      FAST  |clk_BUFGP         |   0.000|
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
 
 Clock to Setup on destination clock clk
@@ -60,18 +59,27 @@ Clock to Setup on destination clock clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |    1.926|         |         |         |
+clk            |    1.858|         |         |         |
+rst            |    8.443|    8.443|         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock rst
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+rst            |         |         |    0.860|    0.860|
 ---------------+---------+---------+---------+---------+
 
 
-Analysis completed Sat Jun 27 01:39:39 2015 
+Analysis completed Sat Jun 27 19:02:27 2015 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 247 MB
+Peak Memory Usage: 243 MB
 
 
 

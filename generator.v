@@ -3,14 +3,17 @@ output[11:0] exp;
 output[1:0] line;
 input clk,rst;
 input[6:0] score;
-reg[5:0] num1,num2;
-reg[3:0] op,num1_fin,num2_fin;
+reg[5:0] num1,num2,ran1,ran2;
+reg[3:0] op,num1_fin,num2_fin,ranop;
 wire[3:0] op_fin;
 always @(posedge clk or negedge rst) begin
 	if (!rst) begin
-		num1 <= 6'b110110;
-		num2 <= 6'b100111;
-		op <= 4'b0110;
+		if(!ran1) num1 <= 6'b110110;
+		else num1<=ran1;
+		if(!ran2) num2 <= 6'b100101;
+		else num2<=ran2;
+		if(!ranop) op <= 4'b1010;
+		else op<=ranop;
 	end
 	else begin
 		num1[4:0] <= num1[5:1];
@@ -19,6 +22,9 @@ always @(posedge clk or negedge rst) begin
 		num2[5] <= num2[1] ^ num2[0];
 		op[2:0] <= op[3:1];
 		op[3] <= op[1] ^ op[0];
+		ran1<=ran1+1;
+		ran2<=ran2+3;
+		ranop<=ranop+1;
 	end
 end
 always @(num1 or num2 or op_fin) begin

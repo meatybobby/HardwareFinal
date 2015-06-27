@@ -15,8 +15,7 @@ module display(CLK, RESET,
   output LCD_RST;
   output [7:0]  LCD_DATA;
   output update;
-  wire[3:0]LV;
-  assign LV = score/5 +1 ;
+  reg [3:0]LV;
   reg    [7:0]  LCD_DATA;
   reg    [7:0]  UPPER_PATTERN;
   reg    [7:0]  LOWER_PATTERN;
@@ -24,15 +23,18 @@ module display(CLK, RESET,
   reg    [7:0]  UPPER_PATTERN_page0;
   reg    [7:0]  LOWER_PATTERN_page0;
   
-  reg    [7:0]  UPPER_PATTERN_startpage;
-  reg    [7:0]  LOWER_PATTERN_startpage;
+  reg    [7:0]  UPPER_PATTERN_startpage = 8'h00;
+  reg    [7:0]  LOWER_PATTERN_startpage = 8'h00;
+  
+  reg    [7:0]  UPPER_PATTERN_unstart;
+  reg    [7:0]  LOWER_PATTERN_unstart;
   
   reg    [1:0]  LCD_SEL;
   reg    [2:0]  STATE;
   reg    [2:0]  X_PAGE;
   reg    [8:1]  DIVIDER;
   reg    [16:1] DELAY;
-  reg    [8:0]  INDEX;
+  reg    [8:0]  INDEX = 8'h0;
   reg    [9:0]  PAGE;
   reg    [1:0]  ENABLE;
   reg    CLEAR;
@@ -58,9 +60,19 @@ module display(CLK, RESET,
   reg[8:0]loc2;
   reg[8:0]loc;
   reg update;
-  
+  reg [5:0]start = 0;
   reg[15:0] speed;
   reg startpage = 0;
+always@(score) begin
+	if(score<4) 
+		LV=1;
+	else if(score<10) 
+		LV=2;
+	else if(score<19) 
+		LV=3;
+	else 
+		LV=score/15+3;
+end
 /*****************************
  * Set ROM's Display Pattern *
  *****************************/
@@ -509,12 +521,12 @@ always @(INDEX)
      9'h066  :  UPPER_PATTERN = 8'h20;
      9'h067  :  UPPER_PATTERN = 8'h00;   
      9'h068  :  UPPER_PATTERN = 8'h00; // /
-     9'h069  :  UPPER_PATTERN = 8'h80;
-     9'h06A  :  UPPER_PATTERN = 8'h80;
-     9'h06B  :  UPPER_PATTERN = 8'hA0;
-     9'h06C  :  UPPER_PATTERN = 8'hA0;
-     9'h06D  :  UPPER_PATTERN = 8'h80;
-     9'h06E  :  UPPER_PATTERN = 8'h80;
+     9'h069  :  UPPER_PATTERN = 8'h00;
+     9'h06A  :  UPPER_PATTERN = 8'h00;
+     9'h06B  :  UPPER_PATTERN = 8'h80;
+     9'h06C  :  UPPER_PATTERN = 8'hc0;
+     9'h06D  :  UPPER_PATTERN = 8'hf0;
+     9'h06E  :  UPPER_PATTERN = 8'h30;
      9'h06F  :  UPPER_PATTERN = 8'h00;
 	 
 	 default :  UPPER_PATTERN = 8'h00;  
@@ -633,12 +645,12 @@ always @(INDEX)
      9'h066  :  LOWER_PATTERN = 8'h04;
      9'h067  :  LOWER_PATTERN = 8'h00;  
      9'h068  :  LOWER_PATTERN = 8'h00; // /
-     9'h069  :  LOWER_PATTERN = 8'h01;
-     9'h06A  :  LOWER_PATTERN = 8'h01; 
-     9'h06B  :  LOWER_PATTERN = 8'h05;
-     9'h06C  :  LOWER_PATTERN = 8'h05;
-     9'h06D  :  LOWER_PATTERN = 8'h01;
-     9'h06E  :  LOWER_PATTERN = 8'h01;
+     9'h069  :  LOWER_PATTERN = 8'h0c;
+     9'h06A  :  LOWER_PATTERN = 8'h0e; 
+     9'h06B  :  LOWER_PATTERN = 8'h07;
+     9'h06C  :  LOWER_PATTERN = 8'h01;
+     9'h06D  :  LOWER_PATTERN = 8'h00;
+     9'h06E  :  LOWER_PATTERN = 8'h00;
      9'h06F  :  LOWER_PATTERN = 8'h00; 
 
      default :  LOWER_PATTERN = 8'h00;  
@@ -647,7 +659,109 @@ always @(INDEX)
 		LOWER_PATTERN = 8'h00; 
    end   
    
-   
+     always@(INDEX)
+   begin
+	case ( INDEX - 44)
+	9'h000: UPPER_PATTERN_unstart = 8'h00;  //s
+	9'h001: UPPER_PATTERN_unstart = 8'hc0; 
+	9'h002: UPPER_PATTERN_unstart = 8'hb0; 
+	9'h003: UPPER_PATTERN_unstart = 8'hb0; 
+	9'h004: UPPER_PATTERN_unstart = 8'hb0; 
+	9'h005: UPPER_PATTERN_unstart = 8'hb0; 
+	9'h006: UPPER_PATTERN_unstart = 8'h20; 
+	9'h007: UPPER_PATTERN_unstart = 8'h00; 
+	
+	9'h008: UPPER_PATTERN_unstart = 8'h70;  //t
+	9'h009: UPPER_PATTERN_unstart = 8'h70; 
+	9'h00a: UPPER_PATTERN_unstart = 8'hf0; 
+	9'h00b: UPPER_PATTERN_unstart = 8'hf0; 
+	9'h00c: UPPER_PATTERN_unstart = 8'hf0; 
+	9'h00d: UPPER_PATTERN_unstart = 8'h70; 
+	9'h00e: UPPER_PATTERN_unstart = 8'h70; 
+	9'h00f: UPPER_PATTERN_unstart = 8'h00; 
+	
+	9'h010: UPPER_PATTERN_unstart = 8'hc0;  //a
+	9'h011: UPPER_PATTERN_unstart = 8'he0; 
+	9'h012: UPPER_PATTERN_unstart = 8'h30; 
+	9'h013: UPPER_PATTERN_unstart = 8'h30; 
+	9'h014: UPPER_PATTERN_unstart = 8'h30; 
+	9'h015: UPPER_PATTERN_unstart = 8'he0; 
+	9'h016: UPPER_PATTERN_unstart = 8'hc0; 
+	9'h017: UPPER_PATTERN_unstart = 8'h00; 
+
+	9'h018: UPPER_PATTERN_unstart = 8'hf0;  //r
+	9'h019: UPPER_PATTERN_unstart = 8'h90; 
+	9'h01a: UPPER_PATTERN_unstart = 8'h90; 
+	9'h01b: UPPER_PATTERN_unstart = 8'h90; 
+	9'h01c: UPPER_PATTERN_unstart = 8'h90; 
+	9'h01d: UPPER_PATTERN_unstart = 8'h90; 
+	9'h01e: UPPER_PATTERN_unstart = 8'h90; 
+	9'h01f: UPPER_PATTERN_unstart = 8'h60; 
+	
+	9'h020: UPPER_PATTERN_unstart = 8'h00;  //t
+	9'h021: UPPER_PATTERN_unstart = 8'h70; 
+	9'h022: UPPER_PATTERN_unstart = 8'h70; 
+	9'h023: UPPER_PATTERN_unstart = 8'hf0; 
+	9'h024: UPPER_PATTERN_unstart = 8'hf0; 
+	9'h025: UPPER_PATTERN_unstart = 8'hf0; 
+	9'h026: UPPER_PATTERN_unstart = 8'h70; 
+	9'h027: UPPER_PATTERN_unstart = 8'h70; 
+	
+	default : UPPER_PATTERN_unstart = 8'h00; 
+	endcase
+   end
+  
+always@(INDEX)
+   begin
+	case ( INDEX -44)
+	9'h000: LOWER_PATTERN_unstart = 8'h00;  //s
+	9'h001: LOWER_PATTERN_unstart = 8'h04; 
+	9'h002: LOWER_PATTERN_unstart = 8'h05; 
+	9'h003: LOWER_PATTERN_unstart = 8'h0d; 
+	9'h004: LOWER_PATTERN_unstart = 8'h0d; 
+	9'h005: LOWER_PATTERN_unstart = 8'h0d; 
+	9'h006: LOWER_PATTERN_unstart = 8'h07; 
+	9'h007: LOWER_PATTERN_unstart = 8'h00; 
+	
+	9'h008: LOWER_PATTERN_unstart = 8'h00;  //t
+	9'h009: LOWER_PATTERN_unstart = 8'h00; 
+	9'h00a: LOWER_PATTERN_unstart = 8'h0f; 
+	9'h00b: LOWER_PATTERN_unstart = 8'h0f; 
+	9'h00c: LOWER_PATTERN_unstart = 8'h0f; 
+	9'h00d: LOWER_PATTERN_unstart = 8'h00; 
+	9'h00e: LOWER_PATTERN_unstart = 8'h00; 
+	9'h00f: LOWER_PATTERN_unstart = 8'h00; 
+	
+	9'h010: LOWER_PATTERN_unstart = 8'h0f;  //a
+	9'h011: LOWER_PATTERN_unstart = 8'h0f; 
+	9'h012: LOWER_PATTERN_unstart = 8'h01; 
+	9'h013: LOWER_PATTERN_unstart = 8'h01; 
+	9'h014: LOWER_PATTERN_unstart = 8'h01; 
+	9'h015: LOWER_PATTERN_unstart = 8'h0f; 
+	9'h016: LOWER_PATTERN_unstart = 8'h0f; 
+	9'h017: LOWER_PATTERN_unstart = 8'h00; 
+
+	9'h018: LOWER_PATTERN_unstart = 8'h00;  //r
+	9'h019: LOWER_PATTERN_unstart = 8'h0f; 
+	9'h01a: LOWER_PATTERN_unstart = 8'h0f; 
+	9'h01b: LOWER_PATTERN_unstart = 8'h00; 
+	9'h01c: LOWER_PATTERN_unstart = 8'h01; 
+	9'h01d: LOWER_PATTERN_unstart = 8'h01; 
+	9'h01e: LOWER_PATTERN_unstart = 8'h06; 
+	9'h01f: LOWER_PATTERN_unstart = 8'h0c; 
+	
+	9'h020: LOWER_PATTERN_unstart = 8'h00;  //t
+	9'h021: LOWER_PATTERN_unstart = 8'h00; 
+	9'h022: LOWER_PATTERN_unstart = 8'h00; 
+	9'h023: LOWER_PATTERN_unstart = 8'h0f; 
+	9'h024: LOWER_PATTERN_unstart = 8'h0f; 
+	9'h025: LOWER_PATTERN_unstart = 8'h0f; 
+	9'h026: LOWER_PATTERN_unstart = 8'h00; 
+	9'h027: LOWER_PATTERN_unstart = 8'h00; 
+	
+	default : LOWER_PATTERN_unstart = 8'h00; 
+	endcase
+   end  
   always@(INDEX)
    begin
 	case ( INDEX - 32)
@@ -842,12 +956,12 @@ always @(INDEX)
 		locexp3 = 9'h30;
 		speed<=16'h0000;
 		update=0;
+		start = 0;
      end
     else
      begin
 		if(locexp1>=64||locexp2>=64||locexp3>=64) update=1;
 		else update=0;
-		if(!speed[lvbit]&&X_PAGE==3'o3) speed<=speed+1;
 		if(update) begin
 			locexp4 = locexp1;
 			locexp5 = locexp2;
@@ -857,9 +971,10 @@ always @(INDEX)
 			locexp3 = 0;
 		 end
 		 if (ENABLE < 2'b10)
-         begin       
+         begin
 	       ENABLE  <= ENABLE + 1;
-	       DELAY[2]<= 1'b1;
+	       if(X_PAGE==3'o2) DELAY[lvbit]<= 1'b1;
+		   else DELAY[2]<=1'b1;
          end  
          else if (DELAY != 16'h0000)    
             DELAY <= DELAY - 1;
@@ -913,6 +1028,40 @@ always @(INDEX)
 			        CLEAR  <= 1'b0; 
                 end  
    	       end
+		   else if(start[5] != 1'b1)
+		    begin
+               if (INDEX < 128)
+               begin
+                  LCD_DI <= 1'b1;
+                  if (X_PAGE == 3)
+					begin
+					LCD_DATA <= UPPER_PATTERN_unstart;
+                   end
+				  else if(X_PAGE == 4)
+					begin
+                    LCD_DATA <= LOWER_PATTERN_unstart;
+					end
+				  else
+				   begin
+					LCD_DATA <= 8'h00;
+				   end
+               if (INDEX < 64)
+                    LCD_SEL <= 2'b01;
+					else
+                    LCD_SEL <= 2'b10;
+                              
+               INDEX  = INDEX + 1;
+               ENABLE<= 2'b00;
+               end
+           else
+           begin
+               STATE  <= 3'o3;
+               LCD_SEL<= 2'b11;
+               X_PAGE <= X_PAGE+1; 
+			   if(X_PAGE == 3'O7)
+					start = start +1;
+           end 
+		end
 		   else if(Life == 0)
 		    begin
                if (INDEX < 128)
@@ -996,11 +1145,6 @@ always @(INDEX)
                STATE  <= 3'o3;
                LCD_SEL<= 2'b11;
                X_PAGE <= X_PAGE+1;
-			   if( X_PAGE == 3'o3 && speed[lvbit])
-				 begin
-					locexp1 = locexp1+1; 
-					locexp4 = locexp4+1;
-				 end
 				end
           end
 		  else if ((X_PAGE == 3'o4)||(X_PAGE == 3'o5))         
@@ -1026,11 +1170,6 @@ always @(INDEX)
                STATE  <= 3'o3;
                LCD_SEL<= 2'b11;
                X_PAGE <= X_PAGE + 1;
-			   if( X_PAGE == 3'o5 && speed[lvbit])
-				begin
-					locexp2 = locexp2+1; 
-					locexp5 = locexp5+1;
-				end
            end 
           end
 		  else if ((X_PAGE == 3'o6)||(X_PAGE == 3'o7))         
@@ -1056,11 +1195,14 @@ always @(INDEX)
                STATE  <= 3'o3;
                LCD_SEL<= 2'b11;
                X_PAGE <= X_PAGE + 1;
-			   if( X_PAGE == 3'o7 && speed[lvbit] )
+			   if( X_PAGE == 3'o7)
 				begin
-					locexp3 = locexp3+1; 
+					locexp1 = locexp1+1; 
+					locexp2 = locexp2+1;
+					locexp3 = locexp3+1;
+					locexp4 = locexp4+1;
+					locexp5 = locexp5+1;
 					locexp6 = locexp6+1;
-					speed<=16'h0000;
 				end
            end 
           end
@@ -1069,12 +1211,12 @@ always @(INDEX)
              STATE  <= 3'o3;
              X_PAGE <= 3'o2;
 			DELAY[16]<= 1'b1;
-          end  
+          end
          end  
 	   end
    end 
   assign LCD_ENABLE = ENABLE[0];
   assign LCD_CS1    = LCD_SEL[0];
   assign LCD_CS2    = LCD_SEL[1];
-  assign lvbit = (LV>2?10-LV+2:10);
+  assign lvbit = (LV>2?7-LV+2:7);
 endmodule 
